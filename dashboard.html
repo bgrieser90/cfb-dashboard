@@ -230,24 +230,29 @@
             }
         }
 
-        /* Mobile Optimizations - SUBTLE ONLY */
+        /* Mobile Optimizations */
         @media (max-width: 768px) {
-            /* Slightly larger text for readability */
+            /* Base typography improvements */
             body {
                 font-size: 15px;
             }
 
-            /* Team names just a bit bigger */
+            /* Header size adjustments */
+            h1 {
+                font-size: 1.875rem !important;
+            }
+
             h3.text-lg {
                 font-size: 1.125rem !important;
             }
 
-            /* Scores slightly larger */
+            /* Score display optimization */
             .text-4xl {
-                font-size: 2.75rem !important;
+                font-size: 2.5rem !important;
+                line-height: 1.1 !important;
             }
 
-            /* Small text more readable */
+            /* Better readability for small text */
             .text-xs {
                 font-size: 0.8125rem !important;
             }
@@ -256,48 +261,116 @@
                 font-size: 0.9375rem !important;
             }
 
-            /* CFB Rankings more visible */
+            /* CFB Rankings visibility */
             .text-xl {
                 font-size: 1.5rem !important;
                 font-weight: 800 !important;
             }
 
-            /* Better touch targets for buttons/tabs */
+            /* Touch-friendly buttons and tabs */
             button {
                 min-height: 44px;
-                padding: 0.75rem 1.25rem !important;
+                padding: 0.75rem 1rem !important;
             }
 
-            /* Reduce card padding slightly to fit better */
+            /* Optimize card spacing */
             .game-card {
-                padding: 0.875rem !important;
+                padding: 0.75rem !important;
+                margin-bottom: 1rem !important;
             }
 
-            /* Team logos slightly larger */
+            /* Container padding reduction */
+            .max-w-7xl {
+                padding-left: 0.75rem !important;
+                padding-right: 0.75rem !important;
+            }
+
+            /* Team logos sizing */
             img.w-12.h-12 {
                 width: 3rem !important;
                 height: 3rem !important;
             }
 
-            /* Stack filter controls only */
+            /* Grid optimizations */
             .md\:grid-cols-3 {
                 grid-template-columns: 1fr !important;
+            }
+
+            /* Quarter breakdown - make it scrollable horizontally */
+            .grid-cols-6 {
+                display: flex;
+                overflow-x: auto;
+                gap: 0.5rem !important;
+                -webkit-overflow-scrolling: touch;
+                scrollbar-width: thin;
+            }
+
+            .grid-cols-6 > div {
+                flex: 0 0 auto;
+                min-width: 70px;
+                text-align: center;
+            }
+
+            /* Stack two-column layouts on mobile */
+            .grid-cols-2 {
+                grid-template-columns: 1fr !important;
+            }
+
+            /* Reduce gaps on mobile */
+            .gap-4 {
+                gap: 0.75rem !important;
+            }
+
+            .gap-6 {
+                gap: 1rem !important;
+            }
+
+            /* Optimize confidence bars */
+            .confidence-bar {
+                height: 32px !important;
+            }
+
+            /* Make tabs more touch-friendly */
+            nav button {
+                padding: 0.875rem 1rem !important;
+                font-size: 0.875rem !important;
             }
         }
 
         @media (max-width: 480px) {
-            /* Very small screens */
+            /* Extra small screens */
             h1 {
-                font-size: 1.75rem !important;
+                font-size: 1.5rem !important;
             }
 
             .text-4xl {
-                font-size: 2.5rem !important;
+                font-size: 2.25rem !important;
             }
 
-            /* CFB Rankings even more visible */
             .text-xl {
-                font-size: 1.625rem !important;
+                font-size: 1.375rem !important;
+            }
+
+            /* Tighter spacing for small screens */
+            .game-card {
+                padding: 0.625rem !important;
+            }
+
+            .max-w-7xl {
+                padding-left: 0.5rem !important;
+                padding-right: 0.5rem !important;
+            }
+
+            /* Smaller team logos on tiny screens */
+            img.w-12.h-12 {
+                width: 2.5rem !important;
+                height: 2.5rem !important;
+            }
+
+            /* Make quarter breakdown items smaller */
+            .grid-cols-6 > div {
+                min-width: 60px;
+                font-size: 0.75rem !important;
             }
         }
         
