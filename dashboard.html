@@ -749,11 +749,31 @@
             text-align: center;
         }
 
+        .team-pill--moneyline {
+            margin-top: 0.35rem;
+        }
+
         @media (max-width: 640px) {
             .team-pill {
-                font-size: 0.75rem;
-                padding-left: 0.75rem;
-                padding-right: 0.75rem;
+                font-size: 0.8rem;
+                padding: 0.35rem 0.75rem;
+                min-width: 3.5rem;
+            }
+
+            .team-pill--moneyline {
+                align-self: center;
+                min-width: 4.25rem;
+                padding: 0.4rem 1rem;
+            }
+
+            .team-name {
+                align-items: center !important;
+                text-align: center !important;
+                gap: 0.4rem !important;
+            }
+
+            .team-name-row {
+                align-items: center !important;
             }
         }
 
@@ -978,8 +998,8 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center py-4">
                 <div class="flex items-center gap-3">
-                    <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%20%20%3Cdefs%3E%20%20%20%20%3ClinearGradient%20id%3D%22cfbGradient%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230b7a75%22%2F%3E%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%231e3a8a%22%2F%3E%20%20%20%20%3C%2FlinearGradient%3E%20%20%3C%2Fdefs%3E%20%20%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2212%22%20fill%3D%22url(%23cfbGradient)%22%2F%3E%20%20%3Cpath%20d%3D%22M18%2022h28l-2%206H20z%22%20fill%3D%22%2322d3ee%22%20opacity%3D%220.85%22%2F%3E%20%20%3Ctext%20x%3D%2232%22%20y%3D%2240%22%20text-anchor%3D%22middle%22%20font-family%3D%22Inter%2CArial%2CHelvetica%2Csans-serif%22%20font-size%3D%2220%22%20font-weight%3D%22700%22%20fill%3D%22%23ffffff%22%3ECFB%3C%2Ftext%3E%20%20%3Ccircle%20cx%3D%2232%22%20cy%3D%2248%22%20r%3D%225%22%20fill%3D%22%2322d3ee%22%20opacity%3D%220.85%22%2F%3E%3C%2Fsvg%3E" alt="CFB logo" class="w-8 h-8 object-contain sm:hidden" onerror="this.onerror=null;this.src='https://a.espncdn.com/i/teamlogos/leagues/500/ncaa.png';">
-                    <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%20%20%3Cdefs%3E%20%20%20%20%3ClinearGradient%20id%3D%22cfbGradient%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230b7a75%22%2F%3E%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%231e3a8a%22%2F%3E%20%20%20%20%3C%2FlinearGradient%3E%20%20%3C%2Fdefs%3E%20%20%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2212%22%20fill%3D%22url(%23cfbGradient)%22%2F%3E%20%20%3Cpath%20d%3D%22M18%2022h28l-2%206H20z%22%20fill%3D%22%2322d3ee%22%20opacity%3D%220.85%22%2F%3E%20%20%3Ctext%20x%3D%2232%22%20y%3D%2240%22%20text-anchor%3D%22middle%22%20font-family%3D%22Inter%2CArial%2CHelvetica%2Csans-serif%22%20font-size%3D%2220%22%20font-weight%3D%22700%22%20fill%3D%22%23ffffff%22%3ECFB%3C%2Ftext%3E%20%20%3Ccircle%20cx%3D%2232%22%20cy%3D%2248%22%20r%3D%225%22%20fill%3D%22%2322d3ee%22%20opacity%3D%220.85%22%2F%3E%3C%2Fsvg%3E" alt="CFB logo" class="w-10 h-10 sm:w-12 sm:h-12 object-contain hidden sm:block" onerror="this.onerror=null;this.src='https://a.espncdn.com/i/teamlogos/leagues/500/ncaa.png';">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/c/cf/NCAA_football_icon_logo.svg" alt="CFB logo" class="w-8 h-8 object-contain sm:hidden" onerror="this.style.display='none';">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/c/cf/NCAA_football_icon_logo.svg" alt="CFB logo" class="w-10 h-10 sm:w-12 sm:h-12 object-contain hidden sm:block" onerror="this.style.display='none';">
                     <div>
                         <h1 class="text-3xl sm:text-4xl font-black gradient-text" style="letter-spacing: -0.03em;">CFB Analytics Dashboard</h1>
                         <p class="text-sm text-gray-600 mt-1 font-medium" style="letter-spacing: 0.025em;">Last Model Run: <span style="color: #10b981;">10/24 4:32 PM</span></p>
@@ -1460,7 +1480,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>North Texas</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(6-1)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #00853D, #009946); color: #FFFFFF; border: 1px solid #00642e; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-3600</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #00853D, #009946); color: #FFFFFF; border: 1px solid #00642e; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-3600</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -1495,7 +1515,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Charlotte</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(1-6)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 bg-gray-100 text-gray-600">+1500</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 bg-gray-100 text-gray-600">+1500</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -1793,7 +1813,7 @@
                 </div>
             </div>
         
-            <div class="game-card bg-white rounded-2xl card-shadow hover-lift overflow-hidden" style="opacity: 0;" data-stars="3" data-stars-cal="3" data-confidence="97" data-tier="None" data-tier-rank="99" data-tier-list="" data-ats-segment="HomeFav" data-record-visible="true">
+            <div class="game-card bg-white rounded-2xl card-shadow hover-lift overflow-hidden" style="opacity: 0;" data-stars="2" data-stars-cal="2" data-confidence="97" data-tier="None" data-tier-rank="99" data-tier-list="" data-ats-segment="HomeFav" data-record-visible="true">
 
                 <!-- Tab Navigation -->
                 <div class="border-b border-gray-200 bg-gray-50">
@@ -1834,7 +1854,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>California</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(5-2)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 bg-gray-100 text-gray-600">+190</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 bg-gray-100 text-gray-600">+190</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -1869,7 +1889,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Virginia Tech</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(2-5)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #74232D, #852834); color: #FFFFFF; border: 1px solid #571a22; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-230</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #74232D, #852834); color: #FFFFFF; border: 1px solid #571a22; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-230</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -1912,7 +1932,7 @@
                                 <div class="flex items-center justify-between mb-2">
                                     <span class="text-xs font-semibold text-gray-500 uppercase tracking-wide">Spread Pick</span>
                                     <div class="flex">
-                                        <svg class="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                        <svg class="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                                     </div>
                                 </div>
                                 <p class="text-sm font-bold text-gray-900">
@@ -2042,10 +2062,10 @@
                                 <div>
                                     <div class="flex justify-between items-center mb-2">
                                         <span class="text-sm font-medium text-gray-700">Spread Confidence</span>
-                                        <span class="text-sm font-bold" style="color: #3b82f6">LOW</span>
+                                        <span class="text-sm font-bold" style="color: #f59e0b">LEAN</span>
                                     </div>
                                     <div class="h-3 bg-white rounded-full overflow-hidden">
-                                        <div class="h-full rounded-full" style="width: 59%; background: #3b82f6"></div>
+                                        <div class="h-full rounded-full" style="width: 59%; background: #f59e0b"></div>
                                     </div>
                                     <div class="mt-2 text-[11px] text-gray-600" title="Model probability of the listed spread pick covering">
                                         Model Probability: <span class="font-semibold">59%</span>
@@ -2156,7 +2176,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Boise State</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(5-2)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #09347A, #0a3c8c); color: #FFFFFF; border: 1px solid #07275c; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-1600</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #09347A, #0a3c8c); color: #FFFFFF; border: 1px solid #07275c; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-1600</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -2191,7 +2211,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Nevada</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(1-6)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 bg-gray-100 text-gray-600">+900</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 bg-gray-100 text-gray-600">+900</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -2377,10 +2397,10 @@
                                 <div>
                                     <div class="flex justify-between items-center mb-2">
                                         <span class="text-sm font-medium text-gray-700">Total Confidence</span>
-                                        <span class="text-sm font-bold" style="color: #3b82f6">CONFIDENT</span>
+                                        <span class="text-sm font-bold" style="color: #6b7280">MINIMAL</span>
                                     </div>
                                     <div class="h-3 bg-white rounded-full overflow-hidden">
-                                        <div class="h-full rounded-full" style="width: 80%; background: #3b82f6"></div>
+                                        <div class="h-full rounded-full" style="width: 80%; background: #6b7280"></div>
                                     </div>
                                     <div class="mt-2 text-[11px] text-gray-600" title="Model probability of the listed total pick hitting">
                                         Model Probability: <span class="font-semibold">80%</span>
@@ -2509,7 +2529,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Syracuse</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(3-4)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 bg-gray-100 text-gray-600">+575</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 bg-gray-100 text-gray-600">+575</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -2544,7 +2564,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Georgia Tech</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(7-0)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #00223e, #002747); color: #FFFFFF; border: 1px solid #001a2f; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-850</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #00223e, #002747); color: #FFFFFF; border: 1px solid #001a2f; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-850</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -2831,7 +2851,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>App State</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(4-3)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 bg-gray-100 text-gray-600">EVEN</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 bg-gray-100 text-gray-600">EVEN</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -2866,7 +2886,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Old Dominion</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(4-3)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #00507d, #005c90); color: #FFFFFF; border: 1px solid #003c5e; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">EVEN</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #00507d, #005c90); color: #FFFFFF; border: 1px solid #003c5e; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">EVEN</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -3184,7 +3204,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Virginia</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(6-1)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #00204e, #00255a); color: #FFFFFF; border: 1px solid #00183b; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-395</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #00204e, #00255a); color: #FFFFFF; border: 1px solid #00183b; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-395</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -3219,7 +3239,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>North Carolina</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(2-4)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 bg-gray-100 text-gray-600">+310</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 bg-gray-100 text-gray-600">+310</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -3405,10 +3425,10 @@
                                 <div>
                                     <div class="flex justify-between items-center mb-2">
                                         <span class="text-sm font-medium text-gray-700">Total Confidence</span>
-                                        <span class="text-sm font-bold" style="color: #3b82f6">CONFIDENT</span>
+                                        <span class="text-sm font-bold" style="color: #6b7280">MINIMAL</span>
                                     </div>
                                     <div class="h-3 bg-white rounded-full overflow-hidden">
-                                        <div class="h-full rounded-full" style="width: 91%; background: #3b82f6"></div>
+                                        <div class="h-full rounded-full" style="width: 91%; background: #6b7280"></div>
                                     </div>
                                     <div class="mt-2 text-[11px] text-gray-600" title="Model probability of the listed total pick hitting">
                                         Model Probability: <span class="font-semibold">91%</span>
@@ -3537,7 +3557,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Ole Miss</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(6-1)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 bg-gray-100 text-gray-600">+170</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 bg-gray-100 text-gray-600">+170</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -3572,7 +3592,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Oklahoma</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(6-1)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #7b0000, #8d0000); color: #FFFFFF; border: 1px solid #5c0000; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-205</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #7b0000, #8d0000); color: #FFFFFF; border: 1px solid #5c0000; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-205</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -3890,7 +3910,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>SMU</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(5-2)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #E32F38, #ff3640); color: #FFFFFF; border: 1px solid #aa232a; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-155</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #E32F38, #ff3640); color: #FFFFFF; border: 1px solid #aa232a; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-155</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -3925,7 +3945,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Wake Forest</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(4-2)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 bg-gray-100 text-gray-600">+130</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 bg-gray-100 text-gray-600">+130</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -4264,7 +4284,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>UCLA</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(3-4)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 bg-gray-100 text-gray-600">+1400</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 bg-gray-100 text-gray-600">+1400</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -4299,7 +4319,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Indiana</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(7-0)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #7D110C, #90140e); color: #FFFFFF; border: 1px solid #5e0d09; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-3200</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #7D110C, #90140e); color: #FFFFFF; border: 1px solid #5e0d09; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-3200</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -4576,7 +4596,7 @@
                 </div>
             </div>
         
-            <div class="game-card bg-white rounded-2xl card-shadow hover-lift overflow-hidden" style="opacity: 0;" data-stars="5" data-stars-cal="5" data-confidence="98" data-tier="None" data-tier-rank="99" data-tier-list="" data-ats-segment="AwayDog" data-record-visible="true">
+            <div class="game-card bg-white rounded-2xl card-shadow hover-lift overflow-hidden" style="opacity: 0;" data-stars="3" data-stars-cal="3" data-confidence="98" data-tier="None" data-tier-rank="99" data-tier-list="" data-ats-segment="AwayDog" data-record-visible="true">
 
                 <!-- Tab Navigation -->
                 <div class="border-b border-gray-200 bg-gray-50">
@@ -4617,7 +4637,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Kansas State</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(3-4)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #633194, #7238aa); color: #FFFFFF; border: 1px solid #4a256f; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">+142</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #633194, #7238aa); color: #FFFFFF; border: 1px solid #4a256f; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">+142</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -4652,7 +4672,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Kansas</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(4-3)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 bg-gray-100 text-gray-600">-170</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 bg-gray-100 text-gray-600">-170</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -4695,7 +4715,7 @@
                                 <div class="flex items-center justify-between mb-2">
                                     <span class="text-xs font-semibold text-gray-500 uppercase tracking-wide">Spread Pick</span>
                                     <div class="flex">
-                                        <svg class="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                        <svg class="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                                     </div>
                                 </div>
                                 <p class="text-sm font-bold text-gray-900">
@@ -4825,10 +4845,10 @@
                                 <div>
                                     <div class="flex justify-between items-center mb-2">
                                         <span class="text-sm font-medium text-gray-700">Spread Confidence</span>
-                                        <span class="text-sm font-bold" style="color: #0f766e">LOW</span>
+                                        <span class="text-sm font-bold" style="color: #6b7280">MINIMAL</span>
                                     </div>
                                     <div class="h-3 bg-white rounded-full overflow-hidden">
-                                        <div class="h-full rounded-full" style="width: 81%; background: #0f766e"></div>
+                                        <div class="h-full rounded-full" style="width: 81%; background: #6b7280"></div>
                                     </div>
                                     <div class="mt-2 text-[11px] text-gray-600" title="Model probability of the listed spread pick covering">
                                         Model Probability: <span class="font-semibold">81%</span>
@@ -4991,7 +5011,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Northwestern</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(5-2)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 bg-gray-100 text-gray-600">+235</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 bg-gray-100 text-gray-600">+235</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -5026,7 +5046,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Nebraska</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(5-2)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #F20017, #ff001a); color: #FFFFFF; border: 1px solid #b60011; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-290</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #F20017, #ff001a); color: #FFFFFF; border: 1px solid #b60011; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-290</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -5365,7 +5385,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Bowling Green</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(3-4)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #2b1000, #311200); color: #FFFFFF; border: 1px solid #200c00; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-298</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #2b1000, #311200); color: #FFFFFF; border: 1px solid #200c00; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-298</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -5400,7 +5420,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Kent State</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(2-5)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 bg-gray-100 text-gray-600">+240</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 bg-gray-100 text-gray-600">+240</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -5687,7 +5707,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Rutgers</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(3-4)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 bg-gray-100 text-gray-600">-125</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 bg-gray-100 text-gray-600">-125</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -5722,7 +5742,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Purdue</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(2-5)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #B89D29, #d4b52f); color: #000000; border: 1px solid #8a761f; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">+105</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #B89D29, #d4b52f); color: #000000; border: 1px solid #8a761f; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">+105</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -6040,7 +6060,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Ohio</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(4-3)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #295A29, #2f682f); color: #FFFFFF; border: 1px solid #1f441f; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-425</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #295A29, #2f682f); color: #FFFFFF; border: 1px solid #1f441f; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-425</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -6075,7 +6095,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Eastern Michigan</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(2-6)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 bg-gray-100 text-gray-600">+330</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 bg-gray-100 text-gray-600">+330</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -6393,7 +6413,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>South Florida</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(6-1)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 bg-gray-100 text-gray-600">-218</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 bg-gray-100 text-gray-600">-218</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -6428,7 +6448,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Memphis</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(6-1)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #002447, #002952); color: #FFFFFF; border: 1px solid #001b35; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">+180</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #002447, #002952); color: #FFFFFF; border: 1px solid #001b35; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">+180</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -6767,7 +6787,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Auburn</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(3-4)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #03244d, #032959); color: #FFFFFF; border: 1px solid #021b3a; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">+120</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #03244d, #032959); color: #FFFFFF; border: 1px solid #021b3a; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">+120</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -6802,7 +6822,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Arkansas</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(2-5)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 bg-gray-100 text-gray-600">-142</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 bg-gray-100 text-gray-600">-142</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -6988,10 +7008,10 @@
                                 <div>
                                     <div class="flex justify-between items-center mb-2">
                                         <span class="text-sm font-medium text-gray-700">Total Confidence</span>
-                                        <span class="text-sm font-bold" style="color: #3b82f6">CONFIDENT</span>
+                                        <span class="text-sm font-bold" style="color: #6b7280">MINIMAL</span>
                                     </div>
                                     <div class="h-3 bg-white rounded-full overflow-hidden">
-                                        <div class="h-full rounded-full" style="width: 89%; background: #3b82f6"></div>
+                                        <div class="h-full rounded-full" style="width: 89%; background: #6b7280"></div>
                                     </div>
                                     <div class="mt-2 text-[11px] text-gray-600" title="Model probability of the listed total pick hitting">
                                         Model Probability: <span class="font-semibold">89%</span>
@@ -7120,7 +7140,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Akron</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(2-6)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 bg-gray-100 text-gray-600">+300</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 bg-gray-100 text-gray-600">+300</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -7155,7 +7175,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Buffalo</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(4-3)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #041A9B, #051eb2); color: #FFFFFF; border: 1px solid #031474; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-380</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #041A9B, #051eb2); color: #FFFFFF; border: 1px solid #031474; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-380</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -7341,10 +7361,10 @@
                                 <div>
                                     <div class="flex justify-between items-center mb-2">
                                         <span class="text-sm font-medium text-gray-700">Total Confidence</span>
-                                        <span class="text-sm font-bold" style="color: #3b82f6">CONFIDENT</span>
+                                        <span class="text-sm font-bold" style="color: #6b7280">MINIMAL</span>
                                     </div>
                                     <div class="h-3 bg-white rounded-full overflow-hidden">
-                                        <div class="h-full rounded-full" style="width: 82%; background: #3b82f6"></div>
+                                        <div class="h-full rounded-full" style="width: 82%; background: #6b7280"></div>
                                     </div>
                                     <div class="mt-2 text-[11px] text-gray-600" title="Model probability of the listed total pick hitting">
                                         Model Probability: <span class="font-semibold">82%</span>
@@ -7442,7 +7462,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>UConn</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(5-2)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #000000, #000000); color: #FFFFFF; border: 1px solid #000000; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-395</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #000000, #000000); color: #FFFFFF; border: 1px solid #000000; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-395</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -7477,7 +7497,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Rice</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(3-4)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 bg-gray-100 text-gray-600">+310</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 bg-gray-100 text-gray-600">+310</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -7663,10 +7683,10 @@
                                 <div>
                                     <div class="flex justify-between items-center mb-2">
                                         <span class="text-sm font-medium text-gray-700">Total Confidence</span>
-                                        <span class="text-sm font-bold" style="color: #3b82f6">CONFIDENT</span>
+                                        <span class="text-sm font-bold" style="color: #6b7280">MINIMAL</span>
                                     </div>
                                     <div class="h-3 bg-white rounded-full overflow-hidden">
-                                        <div class="h-full rounded-full" style="width: 90%; background: #3b82f6"></div>
+                                        <div class="h-full rounded-full" style="width: 90%; background: #6b7280"></div>
                                     </div>
                                     <div class="mt-2 text-[11px] text-gray-600" title="Model probability of the listed total pick hitting">
                                         Model Probability: <span class="font-semibold">90%</span>
@@ -7764,7 +7784,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Utah State</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(4-3)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #003263, #003a72); color: #FFFFFF; border: 1px solid #00264a; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">+136</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #003263, #003a72); color: #FFFFFF; border: 1px solid #00264a; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">+136</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -7799,7 +7819,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>New Mexico</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(4-3)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 bg-gray-100 text-gray-600">-162</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 bg-gray-100 text-gray-600">-162</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -7985,10 +8005,10 @@
                                 <div>
                                     <div class="flex justify-between items-center mb-2">
                                         <span class="text-sm font-medium text-gray-700">Total Confidence</span>
-                                        <span class="text-sm font-bold" style="color: #3b82f6">CONFIDENT</span>
+                                        <span class="text-sm font-bold" style="color: #6b7280">MINIMAL</span>
                                     </div>
                                     <div class="h-3 bg-white rounded-full overflow-hidden">
-                                        <div class="h-full rounded-full" style="width: 93%; background: #3b82f6"></div>
+                                        <div class="h-full rounded-full" style="width: 93%; background: #6b7280"></div>
                                     </div>
                                     <div class="mt-2 text-[11px] text-gray-600" title="Model probability of the listed total pick hitting">
                                         Model Probability: <span class="font-semibold">93%</span>
@@ -8097,7 +8117,7 @@
                 </div>
             </div>
         
-            <div class="game-card bg-white rounded-2xl card-shadow hover-lift overflow-hidden" style="opacity: 0;" data-stars="5" data-stars-cal="5" data-confidence="91" data-tier="None" data-tier-rank="99" data-tier-list="" data-ats-segment="HomeFav" data-record-visible="true">
+            <div class="game-card bg-white rounded-2xl card-shadow hover-lift overflow-hidden" style="opacity: 0;" data-stars="2" data-stars-cal="2" data-confidence="91" data-tier="None" data-tier-rank="99" data-tier-list="" data-ats-segment="HomeFav" data-record-visible="true">
 
                 <!-- Tab Navigation -->
                 <div class="border-b border-gray-200 bg-gray-50">
@@ -8138,7 +8158,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>UL Monroe</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(3-4)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 bg-gray-100 text-gray-600">+400</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 bg-gray-100 text-gray-600">+400</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -8173,7 +8193,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Southern Miss</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(5-2)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #004B97, #0056ae); color: #FFFFFF; border: 1px solid #003871; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-535</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #004B97, #0056ae); color: #FFFFFF; border: 1px solid #003871; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-535</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -8216,7 +8236,7 @@
                                 <div class="flex items-center justify-between mb-2">
                                     <span class="text-xs font-semibold text-gray-500 uppercase tracking-wide">Spread Pick</span>
                                     <div class="flex">
-                                        <svg class="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                        <svg class="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                                     </div>
                                 </div>
                                 <p class="text-sm font-bold text-gray-900">
@@ -8346,10 +8366,10 @@
                                 <div>
                                     <div class="flex justify-between items-center mb-2">
                                         <span class="text-sm font-medium text-gray-700">Spread Confidence</span>
-                                        <span class="text-sm font-bold" style="color: #0f766e">LOW</span>
+                                        <span class="text-sm font-bold" style="color: #f59e0b">LEAN</span>
                                     </div>
                                     <div class="h-3 bg-white rounded-full overflow-hidden">
-                                        <div class="h-full rounded-full" style="width: 74%; background: #0f766e"></div>
+                                        <div class="h-full rounded-full" style="width: 74%; background: #f59e0b"></div>
                                     </div>
                                     <div class="mt-2 text-[11px] text-gray-600" title="Model probability of the listed spread pick covering">
                                         Model Probability: <span class="font-semibold">74%</span>
@@ -8359,10 +8379,10 @@
                                 <div>
                                     <div class="flex justify-between items-center mb-2">
                                         <span class="text-sm font-medium text-gray-700">Total Confidence</span>
-                                        <span class="text-sm font-bold" style="color: #3b82f6">CONFIDENT</span>
+                                        <span class="text-sm font-bold" style="color: #6b7280">MINIMAL</span>
                                     </div>
                                     <div class="h-3 bg-white rounded-full overflow-hidden">
-                                        <div class="h-full rounded-full" style="width: 91%; background: #3b82f6"></div>
+                                        <div class="h-full rounded-full" style="width: 91%; background: #6b7280"></div>
                                     </div>
                                     <div class="mt-2 text-[11px] text-gray-600" title="Model probability of the listed total pick hitting">
                                         Model Probability: <span class="font-semibold">91%</span>
@@ -8460,7 +8480,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>San Diego State</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(5-1)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 bg-gray-100 text-gray-600">-148</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 bg-gray-100 text-gray-600">-148</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -8495,7 +8515,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Fresno State</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(5-2)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #c41230, #e11537); color: #FFFFFF; border: 1px solid #930e24; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">+124</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #c41230, #e11537); color: #FFFFFF; border: 1px solid #930e24; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">+124</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -8834,7 +8854,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Ball State</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(3-4)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #DA0000, #fb0000); color: #FFFFFF; border: 1px solid #a40000; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">+205</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #DA0000, #fb0000); color: #FFFFFF; border: 1px solid #a40000; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">+205</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -8869,7 +8889,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Northern Illinois</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(1-6)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 bg-gray-100 text-gray-600">-250</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 bg-gray-100 text-gray-600">-250</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -9055,10 +9075,10 @@
                                 <div>
                                     <div class="flex justify-between items-center mb-2">
                                         <span class="text-sm font-medium text-gray-700">Total Confidence</span>
-                                        <span class="text-sm font-bold" style="color: #3b82f6">CONFIDENT</span>
+                                        <span class="text-sm font-bold" style="color: #6b7280">MINIMAL</span>
                                     </div>
                                     <div class="h-3 bg-white rounded-full overflow-hidden">
-                                        <div class="h-full rounded-full" style="width: 85%; background: #3b82f6"></div>
+                                        <div class="h-full rounded-full" style="width: 85%; background: #6b7280"></div>
                                     </div>
                                     <div class="mt-2 text-[11px] text-gray-600" title="Model probability of the listed total pick hitting">
                                         Model Probability: <span class="font-semibold">85%</span>
@@ -9187,7 +9207,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Massachusetts</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(0-7)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 bg-gray-100 text-gray-600">+500</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 bg-gray-100 text-gray-600">+500</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -9222,7 +9242,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Central Michigan</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(4-3)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #6a0032, #7a003a); color: #FFFFFF; border: 1px solid #500026; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-700</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #6a0032, #7a003a); color: #FFFFFF; border: 1px solid #500026; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-700</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -9408,10 +9428,10 @@
                                 <div>
                                     <div class="flex justify-between items-center mb-2">
                                         <span class="text-sm font-medium text-gray-700">Total Confidence</span>
-                                        <span class="text-sm font-bold" style="color: #3b82f6">CONFIDENT</span>
+                                        <span class="text-sm font-bold" style="color: #6b7280">MINIMAL</span>
                                     </div>
                                     <div class="h-3 bg-white rounded-full overflow-hidden">
-                                        <div class="h-full rounded-full" style="width: 92%; background: #3b82f6"></div>
+                                        <div class="h-full rounded-full" style="width: 92%; background: #6b7280"></div>
                                     </div>
                                     <div class="mt-2 text-[11px] text-gray-600" title="Model probability of the listed total pick hitting">
                                         Model Probability: <span class="font-semibold">92%</span>
@@ -9540,7 +9560,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Temple</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(4-3)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #A80532, #c1063a); color: #FFFFFF; border: 1px solid #7e0426; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-205</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #A80532, #c1063a); color: #FFFFFF; border: 1px solid #7e0426; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-205</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -9575,7 +9595,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Tulsa</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(2-5)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 bg-gray-100 text-gray-600">+170</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 bg-gray-100 text-gray-600">+170</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -9893,7 +9913,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Western Michigan</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(4-3)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 bg-gray-100 text-gray-600">+102</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 bg-gray-100 text-gray-600">+102</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -9928,7 +9948,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Miami (OH)</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(4-3)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #a4000c, #bd000e); color: #FFFFFF; border: 1px solid #7b0009; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-122</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #a4000c, #bd000e); color: #FFFFFF; border: 1px solid #7b0009; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-122</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -10267,7 +10287,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Florida Atlantic</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(3-4)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 bg-gray-100 text-gray-600">+410</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 bg-gray-100 text-gray-600">+410</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -10302,7 +10322,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Navy</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(6-0)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #131630, #161937); color: #FFFFFF; border: 1px solid #0e1124; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-550</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #131630, #161937); color: #FFFFFF; border: 1px solid #0e1124; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-550</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -10641,7 +10661,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Alabama</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(6-1)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #690014, #790017); color: #FFFFFF; border: 1px solid #4f000f; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-440</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #690014, #790017); color: #FFFFFF; border: 1px solid #4f000f; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-440</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -10676,7 +10696,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>South Carolina</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(3-4)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 bg-gray-100 text-gray-600">+340</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 bg-gray-100 text-gray-600">+340</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -10862,10 +10882,10 @@
                                 <div>
                                     <div class="flex justify-between items-center mb-2">
                                         <span class="text-sm font-medium text-gray-700">Total Confidence</span>
-                                        <span class="text-sm font-bold" style="color: #3b82f6">CONFIDENT</span>
+                                        <span class="text-sm font-bold" style="color: #6b7280">MINIMAL</span>
                                     </div>
                                     <div class="h-3 bg-white rounded-full overflow-hidden">
-                                        <div class="h-full rounded-full" style="width: 92%; background: #3b82f6"></div>
+                                        <div class="h-full rounded-full" style="width: 92%; background: #6b7280"></div>
                                     </div>
                                     <div class="mt-2 text-[11px] text-gray-600" title="Model probability of the listed total pick hitting">
                                         Model Probability: <span class="font-semibold">92%</span>
@@ -10994,7 +11014,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Toledo</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(4-3)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #00488F, #0053a4); color: #FFFFFF; border: 1px solid #00366b; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-115</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #00488F, #0053a4); color: #FFFFFF; border: 1px solid #00366b; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-115</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -11029,7 +11049,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Washington State</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(3-4)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 bg-gray-100 text-gray-600">-105</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 bg-gray-100 text-gray-600">-105</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -11368,7 +11388,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>NC State</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(4-3)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 bg-gray-100 text-gray-600">+200</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 bg-gray-100 text-gray-600">+200</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -11403,7 +11423,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Pittsburgh</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(5-2)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #003263, #003a72); color: #FFFFFF; border: 1px solid #00264a; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-245</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #003263, #003a72); color: #FFFFFF; border: 1px solid #00264a; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-245</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -11721,7 +11741,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Minnesota</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(5-2)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 bg-gray-100 text-gray-600">+275</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 bg-gray-100 text-gray-600">+275</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -11756,7 +11776,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Iowa</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(5-2)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #000000, #000000); color: #FFFFFF; border: 1px solid #000000; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-345</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #000000, #000000); color: #FFFFFF; border: 1px solid #000000; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-345</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -12074,7 +12094,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>BYU</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(7-0)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 bg-gray-100 text-gray-600">+120</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 bg-gray-100 text-gray-600">+120</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -12109,7 +12129,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Iowa State</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(5-2)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #660015, #750018); color: #FFFFFF; border: 1px solid #4d0010; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-142</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #660015, #750018); color: #FFFFFF; border: 1px solid #4d0010; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-142</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -12427,7 +12447,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Illinois</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(5-2)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 bg-gray-100 text-gray-600">+154</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 bg-gray-100 text-gray-600">+154</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -12462,7 +12482,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Washington</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(5-2)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #2B2F64, #313673); color: #FFFFFF; border: 1px solid #20234b; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-185</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #2B2F64, #313673); color: #FFFFFF; border: 1px solid #20234b; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-185</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -12780,7 +12800,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Missouri</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(6-1)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 bg-gray-100 text-gray-600">+120</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 bg-gray-100 text-gray-600">+120</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -12815,7 +12835,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Vanderbilt</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(6-1)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #000000, #000000); color: #FFFFFF; border: 1px solid #000000; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-142</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #000000, #000000); color: #FFFFFF; border: 1px solid #000000; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-142</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -13154,7 +13174,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Baylor</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(4-3)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 bg-gray-100 text-gray-600">+154</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 bg-gray-100 text-gray-600">+154</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -13189,7 +13209,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Cincinnati</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(6-1)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #000000, #000000); color: #FFFFFF; border: 1px solid #000000; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-185</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #000000, #000000); color: #FFFFFF; border: 1px solid #000000; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-185</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -13507,7 +13527,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Oklahoma State</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(1-6)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 bg-gray-100 text-gray-600">EVEN</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 bg-gray-100 text-gray-600">EVEN</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -13542,7 +13562,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Texas Tech</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(6-1)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #C80025, #e6002b); color: #FFFFFF; border: 1px solid #96001c; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">EVEN</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #C80025, #e6002b); color: #FFFFFF; border: 1px solid #96001c; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">EVEN</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -13860,7 +13880,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Texas</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(5-2)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #EE7524, #ff8729); color: #000000; border: 1px solid #b3581b; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-278</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #EE7524, #ff8729); color: #000000; border: 1px solid #b3581b; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-278</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -13895,7 +13915,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Mississippi State</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(4-3)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 bg-gray-100 text-gray-600">+225</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 bg-gray-100 text-gray-600">+225</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -14234,7 +14254,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>TCU</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(5-2)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #3C377D, #453f90); color: #FFFFFF; border: 1px solid #2d295e; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-850</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #3C377D, #453f90); color: #FFFFFF; border: 1px solid #2d295e; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-850</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -14269,7 +14289,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>West Virginia</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(2-5)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 bg-gray-100 text-gray-600">+575</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 bg-gray-100 text-gray-600">+575</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -14587,7 +14607,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Stanford</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(3-4)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 bg-gray-100 text-gray-600">EVEN</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 bg-gray-100 text-gray-600">EVEN</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -14622,7 +14642,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Miami</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(5-1)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #004325, #004d2b); color: #FFFFFF; border: 1px solid #00321c; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">EVEN</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #004325, #004d2b); color: #FFFFFF; border: 1px solid #00321c; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">EVEN</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -14920,7 +14940,7 @@
                 </div>
             </div>
         
-            <div class="game-card bg-white rounded-2xl card-shadow hover-lift overflow-hidden" style="opacity: 0;" data-stars="5" data-stars-cal="5" data-confidence="92" data-tier="None" data-tier-rank="99" data-tier-list="" data-ats-segment="AwayDog" data-record-visible="true">
+            <div class="game-card bg-white rounded-2xl card-shadow hover-lift overflow-hidden" style="opacity: 0;" data-stars="1" data-stars-cal="1" data-confidence="92" data-tier="None" data-tier-rank="99" data-tier-list="" data-ats-segment="AwayDog" data-record-visible="true">
 
                 <!-- Tab Navigation -->
                 <div class="border-b border-gray-200 bg-gray-50">
@@ -14961,7 +14981,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Louisiana</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(2-5)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 bg-gray-100 text-gray-600">+260</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 bg-gray-100 text-gray-600">+260</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -14996,7 +15016,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Troy</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(5-2)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #AE0210, #c80212); color: #FFFFFF; border: 1px solid #83020c; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-325</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #AE0210, #c80212); color: #FFFFFF; border: 1px solid #83020c; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-325</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -15039,7 +15059,7 @@
                                 <div class="flex items-center justify-between mb-2">
                                     <span class="text-xs font-semibold text-gray-500 uppercase tracking-wide">Spread Pick</span>
                                     <div class="flex">
-                                        <svg class="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                        <svg class="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                                     </div>
                                 </div>
                                 <p class="text-sm font-bold text-gray-900">
@@ -15169,10 +15189,10 @@
                                 <div>
                                     <div class="flex justify-between items-center mb-2">
                                         <span class="text-sm font-medium text-gray-700">Spread Confidence</span>
-                                        <span class="text-sm font-bold" style="color: #0f766e">LOW</span>
+                                        <span class="text-sm font-bold" style="color: #6b7280">MINIMAL</span>
                                     </div>
                                     <div class="h-3 bg-white rounded-full overflow-hidden">
-                                        <div class="h-full rounded-full" style="width: 71%; background: #0f766e"></div>
+                                        <div class="h-full rounded-full" style="width: 71%; background: #6b7280"></div>
                                     </div>
                                     <div class="mt-2 text-[11px] text-gray-600" title="Model probability of the listed spread pick covering">
                                         Model Probability: <span class="font-semibold">71%</span>
@@ -15182,10 +15202,10 @@
                                 <div>
                                     <div class="flex justify-between items-center mb-2">
                                         <span class="text-sm font-medium text-gray-700">Total Confidence</span>
-                                        <span class="text-sm font-bold" style="color: #3b82f6">CONFIDENT</span>
+                                        <span class="text-sm font-bold" style="color: #6b7280">MINIMAL</span>
                                     </div>
                                     <div class="h-3 bg-white rounded-full overflow-hidden">
-                                        <div class="h-full rounded-full" style="width: 92%; background: #3b82f6"></div>
+                                        <div class="h-full rounded-full" style="width: 92%; background: #6b7280"></div>
                                     </div>
                                     <div class="mt-2 text-[11px] text-gray-600" title="Model probability of the listed total pick hitting">
                                         Model Probability: <span class="font-semibold">92%</span>
@@ -15314,7 +15334,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Wisconsin</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(2-5)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 bg-gray-100 text-gray-600">EVEN</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 bg-gray-100 text-gray-600">EVEN</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -15349,7 +15369,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Oregon</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(6-1)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #044520, #054f25); color: #FFFFFF; border: 1px solid #033418; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">EVEN</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #044520, #054f25); color: #FFFFFF; border: 1px solid #033418; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">EVEN</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -15688,7 +15708,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Georgia Southern</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(3-4)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #003775, #003f87); color: #FFFFFF; border: 1px solid #002958; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">+100</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #003775, #003f87); color: #FFFFFF; border: 1px solid #002958; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">+100</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -15723,7 +15743,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Arkansas State</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(3-4)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 bg-gray-100 text-gray-600">-120</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 bg-gray-100 text-gray-600">-120</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -16041,7 +16061,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Colorado State</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(2-5)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 bg-gray-100 text-gray-600">+170</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 bg-gray-100 text-gray-600">+170</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -16076,7 +16096,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Wyoming</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(3-4)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #533B22, #5f4427); color: #FFFFFF; border: 1px solid #3e2c1a; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-205</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #533B22, #5f4427); color: #FFFFFF; border: 1px solid #3e2c1a; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-205</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -16262,10 +16282,10 @@
                                 <div>
                                     <div class="flex justify-between items-center mb-2">
                                         <span class="text-sm font-medium text-gray-700">Total Confidence</span>
-                                        <span class="text-sm font-bold" style="color: #3b82f6">CONFIDENT</span>
+                                        <span class="text-sm font-bold" style="color: #6b7280">MINIMAL</span>
                                     </div>
                                     <div class="h-3 bg-white rounded-full overflow-hidden">
-                                        <div class="h-full rounded-full" style="width: 89%; background: #3b82f6"></div>
+                                        <div class="h-full rounded-full" style="width: 89%; background: #6b7280"></div>
                                     </div>
                                     <div class="mt-2 text-[11px] text-gray-600" title="Model probability of the listed total pick hitting">
                                         Model Probability: <span class="font-semibold">89%</span>
@@ -16363,7 +16383,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Texas A&M</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(7-0)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #5C0025, #6a002b); color: #FFFFFF; border: 1px solid #45001c; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-142</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #5C0025, #6a002b); color: #FFFFFF; border: 1px solid #45001c; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-142</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -16398,7 +16418,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>LSU</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(5-2)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 bg-gray-100 text-gray-600">+120</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 bg-gray-100 text-gray-600">+120</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -16716,7 +16736,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Michigan</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(5-2)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #00274c, #002d57); color: #FFFFFF; border: 1px solid #001d39; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-600</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #00274c, #002d57); color: #FFFFFF; border: 1px solid #001d39; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-600</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -16751,7 +16771,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Michigan State</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(3-4)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 bg-gray-100 text-gray-600">+440</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 bg-gray-100 text-gray-600">+440</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -16937,10 +16957,10 @@
                                 <div>
                                     <div class="flex justify-between items-center mb-2">
                                         <span class="text-sm font-medium text-gray-700">Total Confidence</span>
-                                        <span class="text-sm font-bold" style="color: #f59e0b">LEAN</span>
+                                        <span class="text-sm font-bold" style="color: #6b7280">MINIMAL</span>
                                     </div>
                                     <div class="h-3 bg-white rounded-full overflow-hidden">
-                                        <div class="h-full rounded-full" style="width: 73%; background: #f59e0b"></div>
+                                        <div class="h-full rounded-full" style="width: 73%; background: #6b7280"></div>
                                     </div>
                                     <div class="mt-2 text-[11px] text-gray-600" title="Model probability of the listed total pick hitting">
                                         Model Probability: <span class="font-semibold">73%</span>
@@ -17038,7 +17058,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Boston College</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(1-6)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 bg-gray-100 text-gray-600">+1300</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 bg-gray-100 text-gray-600">+1300</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -17073,7 +17093,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Louisville</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(5-1)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #ad000a, #c7000c); color: #FFFFFF; border: 1px solid #820008; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-2800</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #ad000a, #c7000c); color: #FFFFFF; border: 1px solid #820008; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-2800</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -17360,7 +17380,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Tennessee</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(5-2)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #EE9627, #ffad2d); color: #000000; border: 1px solid #b3711d; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-310</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #EE9627, #ffad2d); color: #000000; border: 1px solid #b3711d; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-310</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -17395,7 +17415,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Kentucky</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(2-4)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 bg-gray-100 text-gray-600">+250</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 bg-gray-100 text-gray-600">+250</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -17734,7 +17754,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Houston</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(6-1)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #C90822, #e70927); color: #FFFFFF; border: 1px solid #97061a; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">+235</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #C90822, #e70927); color: #FFFFFF; border: 1px solid #97061a; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">+235</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -17769,7 +17789,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Arizona State</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(5-2)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 bg-gray-100 text-gray-600">-290</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 bg-gray-100 text-gray-600">-290</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -17955,10 +17975,10 @@
                                 <div>
                                     <div class="flex justify-between items-center mb-2">
                                         <span class="text-sm font-medium text-gray-700">Total Confidence</span>
-                                        <span class="text-sm font-bold" style="color: #3b82f6">CONFIDENT</span>
+                                        <span class="text-sm font-bold" style="color: #6b7280">MINIMAL</span>
                                     </div>
                                     <div class="h-3 bg-white rounded-full overflow-hidden">
-                                        <div class="h-full rounded-full" style="width: 88%; background: #3b82f6"></div>
+                                        <div class="h-full rounded-full" style="width: 88%; background: #6b7280"></div>
                                     </div>
                                     <div class="mt-2 text-[11px] text-gray-600" title="Model probability of the listed total pick hitting">
                                         Model Probability: <span class="font-semibold">88%</span>
@@ -18087,7 +18107,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Colorado</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(3-4)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 bg-gray-100 text-gray-600">+380</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 bg-gray-100 text-gray-600">+380</span>
                                             </h3>
                                         </div>
                                     </div>
@@ -18122,7 +18142,7 @@
                                             <h3 class="team-name text-gray-900 flex flex-col sm:flex-row sm:items-center sm:gap-2">
                                                 <span>Utah</span>
                                                 <span class="text-xs sm:text-sm text-gray-600 font-normal">(5-2)</span>
-                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold ml-0 sm:ml-2 mt-1 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #890012, #9e0015); color: #FFFFFF; border: 1px solid #67000e; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-500</span>
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline sm:ml-2 mt-2 sm:mt-0 shadow-sm" style="background: linear-gradient(to right, #890012, #9e0015); color: #FFFFFF; border: 1px solid #67000e; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-500</span>
                                             </h3>
                                         </div>
                                     </div>
