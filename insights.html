@@ -5637,10 +5637,11 @@
                             min: yMin,
                             max: yMax,
                             ticks: {
-                                stepSize: 5,
+                                stepSize: 10,
                                 callback: function(v) {
-                                    return v % 10 === 0 ? v + '%' : '';
-                                }
+                                    return v + '%';
+                                },
+                                font: { size: window.innerWidth < 640 ? 10 : 12 }
                             }
                         }
                     }
