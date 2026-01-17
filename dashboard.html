@@ -2392,8 +2392,8 @@
         });
 
         // Filter functionality
-        const TOTAL_GAMES = 0;
-        const gameData = [];
+        const TOTAL_GAMES = 1;
+        const gameData = [{"index":0,"away":"Miami","home":"Indiana","awayRanked":null,"homeRanked":null,"awayRecord":{"wins":10,"losses":2,"atsWins":7,"atsLosses":5,"atsPushes":0,"overWins":4,"overLosses":8,"overPushes":0},"homeRecord":{"wins":13,"losses":0,"atsWins":8,"atsLosses":5,"atsPushes":0,"overWins":8,"overLosses":5,"overPushes":0},"atsSegment":"AwayDog"}];
 
         function calculateWinPct(record) {
             const total = record.wins + record.losses + (record.ties || 0);
@@ -3449,7 +3449,7 @@
                     </div>
                     <div class="mt-3 pt-3 border-t border-gray-200 text-center">
                         <span class="text-sm text-gray-600">
-                            <span id="record-filtered-count" class="font-bold">0</span> games match record filters
+                            <span id="record-filtered-count" class="font-bold">1</span> games match record filters
                         </span>
                     </div>
                 </div>
@@ -3490,7 +3490,7 @@
                         <button onclick="setMatchupSegment('AwayFav')" class="filter-segment matchup-filter-btn" data-segment="AwayFav" aria-pressed="false">Away Fav</button>
                         <button onclick="setMatchupSegment('AwayDog')" class="filter-segment matchup-filter-btn" data-segment="AwayDog" aria-pressed="false">Away Dog</button>
                     </div>
-                    <span id="filtered-count" class="filter-count" style="margin-left: auto;">0/0</span>
+                    <span id="filtered-count" class="filter-count" style="margin-left: auto;">1/1</span>
                 </div>
             </div>
         </div>
@@ -3498,6 +3498,1519 @@
         <!-- Games Grid -->
         <div class="space-y-6">
         
+            <div class="game-card bg-white rounded-2xl card-shadow hover-lift overflow-hidden" style="opacity: 0;" data-stars="5" data-stars-cal="5" data-confidence="73" data-tier="None" data-tier-rank="99" data-tier-list="" data-ats-segment="AwayDog" data-su-category="favorite" data-ou-pick="over" data-record-visible="true" data-vegas-total="47.5" data-market-spread="8.5" data-pick-location="away" data-pick-side="underdog" data-ats-conference="ACC" data-su-pick-location="home" data-su-conference="Big Ten" data-has-five-star="true">
+
+                <!-- Tab Navigation -->
+                <div class="border-b border-gray-200 bg-gray-50">
+                    <nav class="flex space-x-1 px-3 md:px-4 pt-2 overflow-x-auto" aria-label="Tabs">
+                        <button id="tab-0-overview" onclick="showTab(0, 'overview')" 
+                                class="tab-active bg-white text-gray-900 shadow-sm px-3 py-2 text-xs md:px-5 md:py-2.5 md:text-sm font-semibold rounded-t-lg cursor-pointer hover:bg-blue-50 transition-colors border border-gray-200 border-b-0 shrink-0">
+                            Overview
+                        </button>
+                        
+                        <button id="tab-0-preview" onclick="showTab(0, 'preview')" 
+                                class="text-gray-500 hover:text-gray-700 px-3 py-2 text-xs md:px-5 md:py-2.5 md:text-sm font-semibold rounded-t-lg cursor-pointer transition-all duration-300 hover:bg-white/50 shrink-0">
+                            Preview
+                        </button>
+                        
+                        <button id="tab-0-movement" onclick="showTab(0, 'movement')" 
+                                class="text-gray-500 hover:text-gray-700 px-3 py-2 text-xs md:px-5 md:py-2.5 md:text-sm font-semibold rounded-t-lg cursor-pointer transition-all duration-300 hover:bg-white/50 shrink-0">
+                            Lines
+                        </button>
+                        <button id="tab-0-analytics" onclick="showTab(0, 'analytics')" 
+                                class="text-gray-500 hover:text-gray-700 px-3 py-2 text-xs md:px-5 md:py-2.5 md:text-sm font-semibold rounded-t-lg cursor-pointer transition-all duration-300 hover:bg-white/50 shrink-0">
+                            Analytics
+                        </button>
+                        <button id="tab-0-betting" onclick="showTab(0, 'betting')" 
+                                class="text-gray-500 hover:text-gray-700 px-3 py-2 text-xs md:px-5 md:py-2.5 md:text-sm font-semibold rounded-t-lg cursor-pointer transition-all duration-300 hover:bg-white/50 shrink-0">
+                            Betting
+                        </button>
+                    </nav>
+                </div>
+                
+                <!-- Tab Content -->
+                <div class="p-6">
+                    <!-- Overview Tab -->
+                    <div id="game-0-overview" class="space-y-6 overview-section">
+                        
+                        <!-- Score Display -->
+                        <div class="relative">
+                            <!-- Mobile Layout: scoreboard only (grid moved further down) -->
+                            <div class="md:hidden space-y-2">
+                                <!-- Compact 3-column scoreboard header -->
+                                <div class="grid grid-cols-[1fr,auto,1fr] items-start gap-2 px-1">
+                                    <!-- Away team (left) -->
+                                    <div class="flex items-center justify-start gap-2">
+                                        
+                                                <img src="http://a.espncdn.com/i/teamlogos/ncaa/500/2390.png" alt="Miami" class="w-8 h-8 object-contain mobile-adv-trigger" onclick="toggleMobileAdv(0)" onerror="this.style.display='none'">
+                                                <div class="flex flex-col items-start leading-tight">
+                                                    <span class="text-xs font-extrabold tracking-wide text-gray-900">MIAMI</span>
+                                                    <span class="text-2xl font-bold mobile-adv-trigger" onclick="toggleMobileAdv(0)" style="color: #374151">24.6</span>
+                                                </div>
+                                            
+                                    </div>
+
+                                    <!-- Center: game meta -->
+                                    <div class="flex flex-col items-center text-[10px] text-gray-500 leading-tight px-2">
+                                        <span>Jan 19 • 7:30PM ET</span>
+                                        <span class="mt-0">OU 47.5</span>
+                                        <span>Model: 57.5 (o)</span>
+                                    </div>
+
+                                    <!-- Home team (right) -->
+                                    <div class="flex items-center justify-end gap-2">
+                                        
+                                                <div class="flex flex-col items-end leading-tight">
+                                                    <span class="text-xs font-extrabold tracking-wide text-gray-900">IND</span>
+                                                    <span class="text-2xl font-bold mobile-adv-trigger" onclick="toggleMobileAdv(0)" style="color: #bc1a12">32.8</span>
+                                                </div>
+                                                <img src="http://a.espncdn.com/i/teamlogos/ncaa/500/84.png" alt="Indiana" class="w-8 h-8 object-contain mobile-adv-trigger" onclick="toggleMobileAdv(0)" onerror="this.style.display='none'">
+                                            
+                                    </div>
+                                </div>
+                                <!-- Mobile Advanced Stats Content -->
+                                <div class="mobile-adv-content" id="game-0-adv-content">
+                                    <div class="mobile-adv-team">
+                                        <p>10-2 • ATS: 7-5 • O/U: 4-8</p>
+                                        <p>Raw: 25.4 • Adj: 24.6 • Mode: 31</p>
+                                    </div>
+                                    <div class="mobile-adv-team">
+                                        <p>13-0 • ATS: 8-5 • O/U: 8-5</p>
+                                        <p>Raw: 32.7 • Adj: 32.8 • Mode: 28</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Desktop Layout -->
+                            <div class="hidden md:grid grid-cols-3 gap-4 items-center">
+                                <!-- Away Team -->
+                                <div class="text-center">
+                                    <div class="flex flex-col items-center justify-center mb-2">
+                                        <img src="http://a.espncdn.com/i/teamlogos/ncaa/500/2390.png" alt="Miami" class="w-12 h-12 object-contain mb-1" onerror="this.style.display='none'">
+                                        <div class="team-name-row">
+                                            
+                                            <h3 class="team-name text-gray-900">Miami</h3>
+                                            <div class="team-pill-wrapper"><span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline bg-gray-100 text-gray-600">+280</span></div>
+                                        </div>
+                                    </div>
+                                    <p class="hidden md:block team-meta text-xs text-gray-600 mb-2">
+                                        10-2 • ATS: 7-5 • O/U: 4-8
+                                    </p>
+                                    <p class="text-4xl font-bold team-score" style="color: #374151">
+                                        24.6
+                                    </p>
+                                    <p class="text-[10px] text-gray-500 mt-1">Raw: 25.4 • Adj: 24.6 • Mode: 31</p>
+                                    <div class="mt-2 flex flex-wrap items-center gap-2 justify-center team-pill-row">
+                                        <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold shadow-sm" style="background: linear-gradient(to right, #004325, #004d2b); color: #FFFFFF; border: 1px solid #00321c; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">+8.5</span>
+                                    </div>
+                                </div>
+                                
+                                <!-- VS Divider -->
+                                <div class="text-center">
+                                    <p class="text-xs text-gray-600 font-medium mb-1 mobile-kickoff-label">Jan 19 • 7:30PM ET</p>
+                                    <span class="text-sm text-gray-400 font-medium mobile-vs-label">VS</span>
+                                    <div class="mt-1 mobile-ou-line">
+                                        <span class="text-xs text-gray-600 font-medium">O/U 47.5 <span class="text-[10px] text-gray-400">Model: 57.5 (o)</span></span>
+                                    </div>
+                                </div>
+                                
+                                <!-- Home Team -->
+                                <div class="text-center">
+                                    <div class="flex flex-col items-center justify-center mb-2">
+                                        <img src="http://a.espncdn.com/i/teamlogos/ncaa/500/84.png" alt="Indiana" class="w-12 h-12 object-contain mb-1" onerror="this.style.display='none'">
+                                        <div class="team-name-row">
+                                            
+                                            <h3 class="team-name text-gray-900">Indiana</h3>
+                                            <div class="team-pill-wrapper"><span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--moneyline shadow-sm" style="background: linear-gradient(to right, #7D110C, #90140e); color: #FFFFFF; border: 1px solid #5e0d09; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-355</span></div>
+                                        </div>
+                                    </div>
+                                    <p class="hidden md:block team-meta text-xs text-gray-600 mb-2">
+                                        13-0 • ATS: 8-5 • O/U: 8-5
+                                    </p>
+                                    <p class="text-4xl font-bold team-score" style="color: #bc1a12">
+                                        32.8
+                                    </p>
+                                    <p class="text-[10px] text-gray-500 mt-1">Raw: 32.7 • Adj: 32.8 • Mode: 28</p>
+                                    <div class="mt-2 flex flex-wrap items-center gap-2 justify-center team-pill-row">
+                                        <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold bg-gray-100 text-gray-600">-8.5</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Win Probability Bars -->
+                            <div class="mt-6 space-y-2 winprob-container">
+                                <div class="relative h-6 bg-gray-100 rounded-full overflow-hidden">
+                                    <div class="absolute inset-0 flex">
+                                        <div class="flex items-center justify-center"
+                                             style="width: 20.7%; background: linear-gradient(to right, #004325, #004d2b)">
+                                            <span class="text-xs font-bold text-white">20.7%</span>
+                                        </div>
+                                        <div class="flex items-center justify-center"
+                                             style="width: 79.3%; background: linear-gradient(to right, #7D110C, #90140e)">
+                                            <span class="text-xs font-bold text-white">79.3%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Desktop Model Performance Card -->
+                            <div class="hidden md:block mt-4">
+                                
+	                                    <div class="overview-injury-frame px-4 py-3">
+	                                        <div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">Model Performance</div>
+	                                        <div class="grid grid-cols-2 gap-4">
+	                                            <div class="flex items-center gap-3">
+	                                                <img src="http://a.espncdn.com/i/teamlogos/ncaa/500/2390.png" class="w-6 h-6 object-contain" alt="" onerror="this.style.display='none'">
+                                                <div>
+                                                    <div class="text-xs font-semibold text-slate-700">MIAMI</div>
+                                                    <div class="text-[11px]"><span style="color:#0891b2">50.0%</span> ATS · <span style="color:#0891b2">50.0%</span> O/U · <span style="color:#0d9488">66.7%</span> SU</div>
+                                                </div>
+                                            </div>
+                                            <div class="flex items-center gap-3 justify-end text-right">
+                                                <div>
+                                                    <div class="text-xs font-semibold text-slate-700">IND</div>
+                                                    <div class="text-[11px]"><span style="color:#0891b2">50.0%</span> ATS · <span style="color:#d97706">41.7%</span> O/U · <span style="color:#047857">83.3%</span> SU</div>
+                                                </div>
+                                                <img src="http://a.espncdn.com/i/teamlogos/ncaa/500/84.png" class="w-6 h-6 object-contain" alt="" onerror="this.style.display='none'">
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+
+                            <!-- Mobile Market Strip/Grid with integrated Model Performance -->
+                            <div class="md:hidden">
+                                <div class="market-strip mt-3">
+                                    <div class="market-grid grid grid-cols-[auto,repeat(3,minmax(0,1fr))] gap-x-1 gap-y-0.5 items-stretch">
+                                        <!-- Header row -->
+                                        <div></div>
+                                        <div class="text-[10px] uppercase text-slate-400 text-center font-medium">Spread</div>
+                                        <div class="text-[10px] uppercase text-slate-400 text-center font-medium">Money</div>
+                                        <div class="text-[10px] uppercase text-slate-400 text-center font-medium">Total</div>
+
+                                        <!-- Away row -->
+                                        <div class="flex items-center gap-1 py-0.5">
+                                            <img src="http://a.espncdn.com/i/teamlogos/ncaa/500/2390.png" class="w-4 h-4 object-contain" alt="" onerror="this.style.display='none'">
+                                            <span class="text-[11px] font-semibold text-gray-800">Hurricanes</span>
+                                        </div>
+                                        <div class="flex justify-center py-0.5">
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--market shadow-sm" style="background: linear-gradient(to right, #004325, #004d2b); color: #FFFFFF; border: 1px solid #00321c; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">+8.5</span>
+                                        </div>
+                                        <div class="flex justify-center py-0.5">
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--market bg-gray-100 text-gray-600">+280</span>
+                                        </div>
+                                        <div class="flex justify-center py-0.5">
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--market shadow-sm" style="background: linear-gradient(to right, #004325, #004d2b); color: #FFFFFF; border: 1px solid #00321c; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">o47.5</span>
+                                        </div>
+
+                                        <!-- Away model hit rates sub-row -->
+                                        
+                                            <div class="text-[10px] text-slate-400 pl-5">Hit %</div>
+                                            <div class="text-[10px] text-center"><span style="color:#0891b2">50%</span></div>
+                                            <div class="text-[10px] text-center"><span style="color:#0d9488">67%</span></div>
+                                            <div class="text-[10px] text-center"><span style="color:#0891b2">50%</span></div>
+
+                                        <!-- Home row -->
+                                        <div class="flex items-center gap-1 py-0.5">
+                                            <img src="http://a.espncdn.com/i/teamlogos/ncaa/500/84.png" class="w-4 h-4 object-contain" alt="" onerror="this.style.display='none'">
+                                            <span class="text-[11px] font-semibold text-gray-800">Hoosiers</span>
+                                        </div>
+                                        <div class="flex justify-center py-0.5">
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--market bg-gray-100 text-gray-600">-8.5</span>
+                                        </div>
+                                        <div class="flex justify-center py-0.5">
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--market shadow-sm" style="background: linear-gradient(to right, #7D110C, #90140e); color: #FFFFFF; border: 1px solid #5e0d09; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);">-355</span>
+                                        </div>
+                                        <div class="flex justify-center py-0.5">
+                                            <span class="team-pill inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold team-pill--market bg-gray-100 text-gray-600">u47.5</span>
+                                        </div>
+
+                                        <!-- Home model hit rates sub-row -->
+                                        
+                                            <div class="text-[10px] text-slate-400 pl-5">Hit %</div>
+                                            <div class="text-[10px] text-center"><span style="color:#0891b2">50%</span></div>
+                                            <div class="text-[10px] text-center"><span style="color:#047857">83%</span></div>
+                                            <div class="text-[10px] text-center"><span style="color:#d97706">42%</span></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                            <!-- Key Predictions: mobile Model Picks card -->
+                        <div class="md:hidden">
+	                            <div class="prediction-card overview-injury-frame px-3 py-3 md:px-4 md:py-4">
+                                <div class="flex items-center justify-between mb-3">
+                                    <span class="text-xs font-semibold text-gray-500 uppercase tracking-wide">Model Picks</span>
+                                </div>
+                                <div class="space-y-1">
+                                    <!-- Model Spread -->
+                                    <div class="flex items-baseline justify-between">
+                                        <div>
+                                            <p class="text-[13px] font-semibold text-gray-900">
+                                                
+                                                        <span class="inline-flex items-center gap-1 flex-wrap">
+                                                            <span>MIAMI +8.5 (-110)</span>
+                                                            <span class="flex items-center"><svg class="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg></span>
+                                                            <span class="prob-badge ml-1.5 prob-50-55">51% Probability</span>
+                                                        </span>
+                                                    
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- Model Total -->
+                                    <div class="flex items-baseline justify-between">
+                                        <div>
+                                            <p class="text-[13px] font-semibold text-gray-900">
+                                                
+                                                        <span class="inline-flex items-center gap-1 flex-wrap">
+                                                            <span>OVER 47.5 (-108)</span>
+                                                            <span class="flex items-center"><svg class="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg></span>
+                                                            <span class="prob-badge ml-1.5 prob-70-80">78% Probability</span>
+                                                        </span>
+                                                    
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Key Predictions: mobile Safe Picks card -->
+                        <div class="md:hidden">
+	                            <div class="prediction-card overview-injury-frame px-3 py-3 md:px-4 md:py-4">
+                                <div class="flex items-center justify-between mb-3">
+                                    <span class="text-xs font-semibold text-gray-500 uppercase tracking-wide">Safe Picks</span>
+                                </div>
+                                <div class="space-y-1">
+                                    <!-- Safe Spread -->
+                                    <div class="flex items-baseline justify-between">
+                                        <div>
+                                            <p class="text-[13px] font-semibold text-gray-900">
+                                                
+                                                        <span class="inline-flex items-center gap-1 flex-wrap">
+                                                            <span>Indiana +1.5 (-412)</span>
+                                                            <span class="flex items-center"><svg class="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg></span>
+                                                            <span class="prob-badge ml-1.5 prob-62-70">68% Probability</span>
+                                                        </span>
+                                                    
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- Safe Total -->
+                                    <div class="flex items-baseline justify-between">
+                                        <div>
+                                            <p class="text-[13px] font-semibold text-gray-900">
+                                                
+                                                        <span class="inline-flex items-center gap-1 flex-wrap">
+                                                            <span>OVER 37.5 (-342)</span>
+                                                            <span class="flex items-center"><svg class="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg></span>
+                                                            <span class="prob-badge ml-1.5 prob-70-80">73% Probability</span>
+                                                        </span>
+                                                    
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Key Predictions: desktop Model Picks / Safe Picks -->
+                        <div class="hidden md:grid md:grid-cols-2 md:gap-4 md:space-y-0">
+                            <!-- Model Picks -->
+	                            <div class="prediction-card overview-injury-frame px-3 py-3 md:px-4 md:py-4">
+                                <div class="flex items-center justify-between mb-2">
+                                    <span class="text-xs font-semibold text-gray-500 uppercase tracking-wide">Model Picks</span>
+                                </div>
+                                <div class="space-y-1">
+                                    <!-- Model Spread -->
+                                    <p class="text-sm font-bold text-gray-900">
+                                        
+                                                <span class="inline-flex items-center gap-2 flex-wrap">
+                                                    <span>Miami +8.5 (-110)</span>
+                                                    <span class="flex items-center"><svg class="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg></span>
+                                                    <span class="prob-badge prob-50-55">51% Probability</span>
+                                                </span>
+                                            
+                                    </p>
+                                    <!-- Model Total -->
+                                    <p class="text-sm font-bold text-gray-900">
+                                        
+                                                <span class="inline-flex items-center gap-2 flex-wrap">
+                                                    <span>OVER 47.5 (-108)</span>
+                                                    <span class="flex items-center"><svg class="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg></span>
+                                                    <span class="prob-badge prob-70-80">78% Probability</span>
+                                                </span>
+                                            
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Safe Picks -->
+	                            <div class="prediction-card overview-injury-frame px-3 py-3 md:px-4 md:py-4">
+                                <div class="flex items-center justify-between mb-2">
+                                    <span class="text-xs font-semibold text-gray-500 uppercase tracking-wide">Safe Picks</span>
+                                </div>
+                                <div class="space-y-1">
+                                    <!-- Safe Spread -->
+                                    <p class="text-sm font-bold text-gray-900">
+                                        
+                                                <span class="inline-flex items-center gap-2 flex-wrap">
+                                                    <span>Indiana +1.5 (-412)</span>
+                                                    <span class="flex items-center"><svg class="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg></span>
+                                                    <span class="prob-badge prob-62-70">68% Probability</span>
+                                                </span>
+                                            
+                                    </p>
+                                    <!-- Safe Total -->
+                                    <p class="text-sm font-bold text-gray-900">
+                                        
+                                                <span class="inline-flex items-center gap-2 flex-wrap">
+                                                    <span>OVER 37.5 (-342)</span>
+                                                    <span class="flex items-center"><svg class="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg></span>
+                                                    <span class="prob-badge prob-70-80">73% Probability</span>
+                                                </span>
+                                            
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+        <div id="game-0-preview" class="hidden space-y-4">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-3">
+        <div class="preview-card preview-overview p-3 sm:p-4 lg:col-span-2">
+            <div class="flex items-center justify-between mb-3">
+                <h4 class="preview-title">Overview</h4>
+            </div>
+            <div class="preview-overview-grid">
+                <div class="preview-overview-summary">
+                    <div class="preview-overview-matchup">
+                        <div class="preview-overview-team">
+                            <span class="preview-team-label"><img src="http://a.espncdn.com/i/teamlogos/ncaa/500/2390.png" alt="MIAMI" class="preview-team-logo" onerror="this.style.display='none'"><span class="preview-team-abbr">MIAMI</span></span>
+                            <span class="preview-overview-record">(SU 11-2)</span>
+                        </div>
+                        <span class="preview-overview-at">at</span>
+                        <div class="preview-overview-team">
+                            <span class="preview-team-label"><img src="http://a.espncdn.com/i/teamlogos/ncaa/500/84.png" alt="IND" class="preview-team-logo" onerror="this.style.display='none'"><span class="preview-team-abbr">IND</span></span>
+                            <span class="preview-overview-record">(SU 13-0)</span>
+                        </div>
+                    </div>
+                </div>
+                
+            <div class="preview-overview-trends">
+                <div class="preview-overview-trends-title">Situational Trends:</div>
+                <ul class="preview-overview-bullets"><li><strong class="preview-overview-bullet-label">ATS:</strong> IND 6-4 as a favorite; MIAMI 2-0 as an underdog.</li><li><strong class="preview-overview-bullet-label">Totals:</strong> IND 4-3 at home; MIAMI 1-5 on the road.</li></ul>
+            </div>
+        
+            </div>
+        </div>
+    
+        <div class="preview-card p-3 sm:p-4">
+            <div class="flex items-center justify-between">
+                <h4 class="preview-title">Key Angles Edge</h4>
+                <span class="preview-edge-indicator" style="background: #7D110C;" title="IND edge"></span>
+            </div>
+            <div class="mt-3 space-y-2">
+                <div class="preview-edge-bar">
+                    <div class="preview-edge-fill" style="width: 14.285714285714285%; background: #004325;"></div>
+                    <div class="preview-edge-fill" style="width: 85.71428571428571%; background: #7D110C;"></div>
+                </div>
+                <div class="preview-edge-stats">
+                    
+        <div class="preview-edge-stat">
+            <span class="preview-team-label"><img src="http://a.espncdn.com/i/teamlogos/ncaa/500/2390.png" alt="MIAMI" class="preview-team-logo" onerror="this.style.display='none'"><span class="preview-team-abbr">MIAMI</span></span>
+            <span class="preview-edge-value">1</span>
+        </div>
+    
+                    
+        <div class="preview-edge-stat">
+            <span class="preview-team-label"><img src="http://a.espncdn.com/i/teamlogos/ncaa/500/84.png" alt="IND" class="preview-team-logo" onerror="this.style.display='none'"><span class="preview-team-abbr">IND</span></span>
+            <span class="preview-edge-value">6</span>
+        </div>
+    
+                </div>
+                <div class="preview-edge-reasons">Top edges: Explosives, Pace</div>
+            </div>
+        </div>
+    </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+        <div class="preview-card preview-context-card p-3 sm:p-4">
+            <div class="flex items-center justify-between mb-2">
+                <div class="preview-context-header">
+                    <svg class="preview-context-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h20"/><path d="M5 12l4-4"/><path d="M5 12l4 4"/><path d="M19 6v12"/></svg>
+                    <h4 class="preview-title">Travel / Rest</h4>
+                </div>
+            </div>
+            <div class="preview-context-stack">
+                
+        <div class="preview-context-row preview-context-row--metrics">
+            <span class="preview-team-label"><img src="http://a.espncdn.com/i/teamlogos/ncaa/500/2390.png" alt="MIAMI" class="preview-team-logo" onerror="this.style.display='none'"><span class="preview-team-abbr">MIAMI</span></span>
+            <div class="preview-metric-grid">
+        <div class="preview-metric">
+            <div class="preview-metric-label">Rest</div>
+            <div class="preview-metric-value">18d</div>
+        </div>
+    
+        <div class="preview-metric">
+            <div class="preview-metric-label">Travel</div>
+            <div class="preview-metric-value">606 mi</div>
+        </div>
+    </div>
+        </div>
+    
+                
+        <div class="preview-context-row preview-context-row--metrics">
+            <span class="preview-team-label"><img src="http://a.espncdn.com/i/teamlogos/ncaa/500/84.png" alt="IND" class="preview-team-logo" onerror="this.style.display='none'"><span class="preview-team-abbr">IND</span></span>
+            <div class="preview-metric-grid">
+        <div class="preview-metric">
+            <div class="preview-metric-label">Rest</div>
+            <div class="preview-metric-value">18d</div>
+        </div>
+    
+        <div class="preview-metric">
+            <div class="preview-metric-label">Travel</div>
+            <div class="preview-metric-value">0 mi</div>
+        </div>
+    </div>
+        </div>
+    
+            </div>
+        </div>
+    
+        <div class="preview-card preview-context-card p-3 sm:p-4">
+            
+        <div class="flex items-center justify-between mb-2">
+            <div class="preview-context-header">
+                <svg class="preview-context-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="17" r="3"/><path d="M10 10l4 4"/></svg>
+                <h4 class="preview-title">Common Opponents</h4>
+            </div>
+            <span class="preview-meta">1 shared</span>
+        </div>
+    
+            <div class="preview-context-stack">
+                
+        <div class="preview-context-row preview-context-row--metrics">
+            <span class="preview-team-label"><img src="http://a.espncdn.com/i/teamlogos/ncaa/500/2390.png" alt="MIAMI" class="preview-team-logo" onerror="this.style.display='none'"><span class="preview-team-abbr">MIAMI</span></span>
+            <div class="preview-metric-grid">
+        <div class="preview-metric">
+            <div class="preview-metric-label">Record</div>
+            <div class="preview-metric-value">1-0</div>
+        </div>
+    
+        <div class="preview-metric">
+            <div class="preview-metric-label">Avg diff</div>
+            <div class="preview-metric-value">+10.0</div>
+        </div>
+    </div>
+        </div>
+    
+                
+        <div class="preview-context-row preview-context-row--metrics">
+            <span class="preview-team-label"><img src="http://a.espncdn.com/i/teamlogos/ncaa/500/84.png" alt="IND" class="preview-team-logo" onerror="this.style.display='none'"><span class="preview-team-abbr">IND</span></span>
+            <div class="preview-metric-grid">
+        <div class="preview-metric">
+            <div class="preview-metric-label">Record</div>
+            <div class="preview-metric-value">1-0</div>
+        </div>
+    
+        <div class="preview-metric">
+            <div class="preview-metric-label">Avg diff</div>
+            <div class="preview-metric-value">+3.0</div>
+        </div>
+    </div>
+        </div>
+    
+            </div>
+        </div>
+    </div>
+            <div class="space-y-3">
+        <div class="preview-card p-3 sm:p-4 lg:col-span-2">
+            <div class="flex items-center justify-between mb-3">
+                <h4 class="preview-title">Key Angles</h4>
+                <div class="flex items-center gap-2">
+                    <span class="preview-meta">Top 5 / 9</span>
+                    <span class="preview-swipe-hint">Swipe ></span>
+                    <button id="preview-angles-toggle-0" class="preview-angles-toggle" type="button" aria-expanded="false" onclick="togglePreviewAngles(0)">Show all</button>
+                </div>
+            </div>
+            <ul id="preview-angles-0" class="preview-angles-grid preview-angles-grid--collapsed">
+        <li class="preview-angle">
+            <div class="flex items-center justify-between gap-2 mb-1">
+                <span class="preview-angle-tag">Explosives</span>
+                <span class="preview-edge-indicator" style="background: #7D110C;" title="IND edge"></span>
+            </div>
+            
+                        <div class="preview-angle-lines">
+                            <div class="preview-angle-line preview-angle-line--edge" style="--edge-color: #7D110C;"><img src="http://a.espncdn.com/i/teamlogos/ncaa/500/84.png" alt="IND" class="preview-angle-logo" onerror="this.style.display='none'"><span class="preview-angle-abbr">IND</span><span class="preview-angle-metric">#1 Explosive Pass Rate</span></div>
+                            <div class="preview-angle-line preview-angle-line--muted"><img src="http://a.espncdn.com/i/teamlogos/ncaa/500/2390.png" alt="MIAMI" class="preview-angle-logo" onerror="this.style.display='none'"><span class="preview-angle-abbr">MIAMI</span><span class="preview-angle-metric">#1 Opp 20+ Pass Rate</span></div>
+                        </div>
+                    
+        </li>
+    
+        <li class="preview-angle">
+            <div class="flex items-center justify-between gap-2 mb-1">
+                <span class="preview-angle-tag">Turnovers</span>
+                <span class="preview-edge-indicator" style="background: #7D110C;" title="IND edge"></span>
+            </div>
+            
+                        <div class="preview-angle-lines">
+                            <div class="preview-angle-line preview-angle-line--edge" style="--edge-color: #7D110C;"><img src="http://a.espncdn.com/i/teamlogos/ncaa/500/84.png" alt="IND" class="preview-angle-logo" onerror="this.style.display='none'"><span class="preview-angle-abbr">IND</span><span class="preview-angle-metric">#2 INTs / G</span></div>
+                            <div class="preview-angle-line preview-angle-line--muted"><img src="http://a.espncdn.com/i/teamlogos/ncaa/500/2390.png" alt="MIAMI" class="preview-angle-logo" onerror="this.style.display='none'"><span class="preview-angle-abbr">MIAMI</span><span class="preview-angle-metric">#2 Opp INTs / G</span></div>
+                        </div>
+                    
+        </li>
+    
+        <li class="preview-angle">
+            <div class="flex items-center justify-between gap-2 mb-1">
+                <span class="preview-angle-tag">Pass</span>
+                <span class="preview-edge-indicator" style="background: #004325;" title="MIAMI edge"></span>
+            </div>
+            
+                        <div class="preview-angle-lines">
+                            <div class="preview-angle-line preview-angle-line--edge" style="--edge-color: #004325;"><img src="http://a.espncdn.com/i/teamlogos/ncaa/500/2390.png" alt="MIAMI" class="preview-angle-logo" onerror="this.style.display='none'"><span class="preview-angle-abbr">MIAMI</span><span class="preview-angle-metric">#1 Pass YPG</span></div>
+                            <div class="preview-angle-line preview-angle-line--muted"><img src="http://a.espncdn.com/i/teamlogos/ncaa/500/84.png" alt="IND" class="preview-angle-logo" onerror="this.style.display='none'"><span class="preview-angle-abbr">IND</span><span class="preview-angle-metric">#1 Opp Pass YPG</span></div>
+                        </div>
+                    
+        </li>
+    
+        <li class="preview-angle">
+            <div class="flex items-center justify-between gap-2 mb-1">
+                <span class="preview-angle-tag">3rd Down</span>
+                <span class="preview-edge-indicator" style="background: #7D110C;" title="IND edge"></span>
+            </div>
+            
+                        <div class="preview-angle-lines">
+                            <div class="preview-angle-line preview-angle-line--edge" style="--edge-color: #7D110C;"><img src="http://a.espncdn.com/i/teamlogos/ncaa/500/84.png" alt="IND" class="preview-angle-logo" onerror="this.style.display='none'"><span class="preview-angle-abbr">IND</span><span class="preview-angle-metric">#1 3rd Down %</span></div>
+                            <div class="preview-angle-line preview-angle-line--muted"><img src="http://a.espncdn.com/i/teamlogos/ncaa/500/2390.png" alt="MIAMI" class="preview-angle-logo" onerror="this.style.display='none'"><span class="preview-angle-abbr">MIAMI</span><span class="preview-angle-metric">#1 Opp 3rd Down %</span></div>
+                        </div>
+                    
+        </li>
+    
+        <li class="preview-angle">
+            <div class="flex items-center justify-between gap-2 mb-1">
+                <span class="preview-angle-tag">Explosives</span>
+                <span class="preview-edge-indicator" style="background: #7D110C;" title="IND edge"></span>
+            </div>
+            
+                        <div class="preview-angle-lines">
+                            <div class="preview-angle-line preview-angle-line--edge" style="--edge-color: #7D110C;"><img src="http://a.espncdn.com/i/teamlogos/ncaa/500/84.png" alt="IND" class="preview-angle-logo" onerror="this.style.display='none'"><span class="preview-angle-abbr">IND</span><span class="preview-angle-metric">#1 Explosive Run Rate</span></div>
+                            <div class="preview-angle-line preview-angle-line--muted"><img src="http://a.espncdn.com/i/teamlogos/ncaa/500/2390.png" alt="MIAMI" class="preview-angle-logo" onerror="this.style.display='none'"><span class="preview-angle-abbr">MIAMI</span><span class="preview-angle-metric">#1 Opp 10+ Rush Rate</span></div>
+                        </div>
+                    
+        </li>
+    
+        <li class="preview-angle preview-angle--extra">
+            <div class="flex items-center justify-between gap-2 mb-1">
+                <span class="preview-angle-tag">Pace</span>
+                <span class="preview-edge-indicator" style="background: #7D110C;" title="IND edge"></span>
+            </div>
+            <div class="preview-angle-text">Tempo (lower faster): MIAMI #2, IND #1</div>
+        </li>
+    
+        <li class="preview-angle preview-angle--extra">
+            <div class="flex items-center justify-between gap-2 mb-1">
+                <span class="preview-angle-tag">Trend</span>
+                <span class="preview-edge-indicator" style="background: #7D110C;" title="IND edge"></span>
+            </div>
+            
+                        <div class="preview-angle-lines">
+                            <div class="preview-angle-line"><img src="http://a.espncdn.com/i/teamlogos/ncaa/500/2390.png" alt="MIAMI" class="preview-angle-logo" onerror="this.style.display='none'"><span class="preview-angle-abbr">MIAMI</span><span class="preview-angle-metric">+19.8</span></div>
+                            <div class="preview-angle-line preview-angle-line--edge preview-angle-line--muted" style="--edge-color: #7D110C;"><img src="http://a.espncdn.com/i/teamlogos/ncaa/500/84.png" alt="IND" class="preview-angle-logo" onerror="this.style.display='none'"><span class="preview-angle-abbr">IND</span><span class="preview-angle-metric">+23.6</span></div>
+                        </div>
+                    
+        </li>
+    
+        <li class="preview-angle preview-angle--extra">
+            <div class="flex items-center justify-between gap-2 mb-1">
+                <span class="preview-angle-tag">Red Zone</span>
+                <span class="preview-edge-indicator preview-edge-indicator--even" style="--edge-left: #004325; --edge-right: #7D110C;" title="Even"></span>
+            </div>
+            
+                        <div class="preview-angle-lines">
+                            <div class="preview-angle-line"><img src="http://a.espncdn.com/i/teamlogos/ncaa/500/84.png" alt="IND" class="preview-angle-logo" onerror="this.style.display='none'"><span class="preview-angle-abbr">IND</span><span class="preview-angle-metric">#1 RZ TD %</span></div>
+                            <div class="preview-angle-line preview-angle-line--muted"><img src="http://a.espncdn.com/i/teamlogos/ncaa/500/2390.png" alt="MIAMI" class="preview-angle-logo" onerror="this.style.display='none'"><span class="preview-angle-abbr">MIAMI</span><span class="preview-angle-metric">#2 Opp RZ TD %</span></div>
+                        </div>
+                    
+        </li>
+    
+        <li class="preview-angle preview-angle--extra">
+            <div class="flex items-center justify-between gap-2 mb-1">
+                <span class="preview-angle-tag">Pass</span>
+                <span class="preview-edge-indicator preview-edge-indicator--even" style="--edge-left: #004325; --edge-right: #7D110C;" title="Even"></span>
+            </div>
+            
+                        <div class="preview-angle-lines">
+                            <div class="preview-angle-line"><img src="http://a.espncdn.com/i/teamlogos/ncaa/500/84.png" alt="IND" class="preview-angle-logo" onerror="this.style.display='none'"><span class="preview-angle-abbr">IND</span><span class="preview-angle-metric">#1 Yards/Att</span></div>
+                            <div class="preview-angle-line preview-angle-line--muted"><img src="http://a.espncdn.com/i/teamlogos/ncaa/500/2390.png" alt="MIAMI" class="preview-angle-logo" onerror="this.style.display='none'"><span class="preview-angle-abbr">MIAMI</span><span class="preview-angle-metric">#2 Opp Yards/Att</span></div>
+                        </div>
+                    
+        </li>
+    </ul>
+        </div>
+    </div>
+        </div>
+    
+
+                    <!-- Analytics Tab -->
+                    <div id="game-0-analytics" class="space-y-6 hidden">
+                        <!-- Offensive Stats Grid -->
+                        <div class="space-y-4">
+                            <h4 class="text-sm font-semibold text-gray-700">Offensive Projections</h4>
+                            
+                            <!-- Away Team Stats -->
+                            <div class="analytics-panel" style="--accent:#004325;">
+                                <div class="analytics-header"><span>Miami</span></div>
+                                <div class="analytics-grid">
+                                    <div class="bg-white border border-[#e6e8ee] rounded-xl p-3 stat-card" data-prop="passing_yards" data-value="187">
+                                        <p class="text-xs text-gray-500 font-medium">Pass Yards</p>
+                                        <div class="value text-lg font-bold text-gray-900"><span class="num">187</span></div>
+                                        <div class="range-wrap"><span class="range-pill js-pill"></span><div class="rangebar"><div class="whisker js-whisker"></div><div class="center js-center"></div></div></div>
+                                    </div>
+                                    <div class="bg-white border border-[#e6e8ee] rounded-xl p-3 stat-card" data-prop="pass_attempts" data-value="23">
+                                        <p class="text-xs text-gray-500 font-medium">Pass Attempts</p>
+                                        <div class="value text-lg font-bold text-gray-900"><span class="num">23</span></div>
+                                        <div class="range-wrap"><span class="range-pill js-pill"></span><div class="rangebar"><div class="whisker js-whisker"></div><div class="center js-center"></div></div></div>
+                                    </div>
+                                    <div class="bg-white border border-[#e6e8ee] rounded-xl p-3 stat-card" data-prop="pass_completions" data-value="14">
+                                        <p class="text-xs text-gray-500 font-medium">Completions</p>
+                                        <div class="value text-lg font-bold text-gray-900"><span class="num">14</span></div>
+                                        <div class="range-wrap"><span class="range-pill js-pill"></span><div class="rangebar"><div class="whisker js-whisker"></div><div class="center js-center"></div></div></div>
+                                    </div>
+                                    <div class="bg-white border border-[#e6e8ee] rounded-xl p-3 stat-card" data-prop="passing_tds" data-value="0.9">
+                                        <p class="text-xs text-gray-500 font-medium">Pass TDs</p>
+                                        <div class="value text-lg font-bold text-gray-900"><span class="num">0.9</span></div>
+                                        <div class="range-wrap"><span class="range-pill js-pill"></span><div class="rangebar"><div class="whisker js-whisker"></div><div class="center js-center"></div></div></div>
+                                    </div>
+                                    <div class="bg-white border border-[#e6e8ee] rounded-xl p-3 stat-card" data-prop="rushing_yards" data-value="187">
+                                        <p class="text-xs text-gray-500 font-medium">Rush Yards</p>
+                                        <div class="value text-lg font-bold text-gray-900"><span class="num">187</span></div>
+                                        <div class="range-wrap"><span class="range-pill js-pill"></span><div class="rangebar"><div class="whisker js-whisker"></div><div class="center js-center"></div></div></div>
+                                    </div>
+                                    <div class="bg-white border border-[#e6e8ee] rounded-xl p-3 stat-card" data-prop="rushing_attempts" data-value="36">
+                                        <p class="text-xs text-gray-500 font-medium">Rush Att</p>
+                                        <div class="value text-lg font-bold text-gray-900"><span class="num">36</span></div>
+                                        <div class="range-wrap"><span class="range-pill js-pill"></span><div class="rangebar"><div class="whisker js-whisker"></div><div class="center js-center"></div></div></div>
+                                    </div>
+                                    <div class="bg-white border border-[#e6e8ee] rounded-xl p-3 stat-card" data-prop="rushing_tds" data-value="2.4">
+                                        <p class="text-xs text-gray-500 font-medium">Rush TDs</p>
+                                        <div class="value text-lg font-bold text-gray-900"><span class="num">2.4</span></div>
+                                        <div class="range-wrap"><span class="range-pill js-pill"></span><div class="rangebar"><div class="whisker js-whisker"></div><div class="center js-center"></div></div></div>
+                                    </div>
+                                    <div class="bg-white border border-[#e6e8ee] rounded-xl p-3 stat-card" data-prop="turnovers" data-value="0.6">
+                                        <p class="text-xs text-gray-500 font-medium">Turnovers</p>
+                                        <div class="value text-lg font-bold text-gray-900"><span class="num">0.6</span></div>
+                                        <div class="range-wrap"><span class="range-pill js-pill"></span><div class="rangebar"><div class="whisker js-whisker"></div><div class="center js-center"></div></div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Home Team Stats -->
+                            <div class="analytics-panel" style="--accent:#7D110C;">
+                                <div class="analytics-header"><span>Indiana</span></div>
+                                <div class="analytics-grid">
+                                    <div class="bg-white border border-[#e6e8ee] rounded-xl p-3 stat-card" data-prop="passing_yards" data-value="235">
+                                        <p class="text-xs text-gray-500 font-medium">Pass Yards</p>
+                                        <div class="value text-lg font-bold text-gray-900"><span class="num">235</span></div>
+                                        <div class="range-wrap"><span class="range-pill js-pill"></span><div class="rangebar"><div class="whisker js-whisker"></div><div class="center js-center"></div></div></div>
+                                    </div>
+                                    <div class="bg-white border border-[#e6e8ee] rounded-xl p-3 stat-card" data-prop="pass_attempts" data-value="25">
+                                        <p class="text-xs text-gray-500 font-medium">Pass Attempts</p>
+                                        <div class="value text-lg font-bold text-gray-900"><span class="num">25</span></div>
+                                        <div class="range-wrap"><span class="range-pill js-pill"></span><div class="rangebar"><div class="whisker js-whisker"></div><div class="center js-center"></div></div></div>
+                                    </div>
+                                    <div class="bg-white border border-[#e6e8ee] rounded-xl p-3 stat-card" data-prop="pass_completions" data-value="17">
+                                        <p class="text-xs text-gray-500 font-medium">Completions</p>
+                                        <div class="value text-lg font-bold text-gray-900"><span class="num">17</span></div>
+                                        <div class="range-wrap"><span class="range-pill js-pill"></span><div class="rangebar"><div class="whisker js-whisker"></div><div class="center js-center"></div></div></div>
+                                    </div>
+                                    <div class="bg-white border border-[#e6e8ee] rounded-xl p-3 stat-card" data-prop="passing_tds" data-value="1.4">
+                                        <p class="text-xs text-gray-500 font-medium">Pass TDs</p>
+                                        <div class="value text-lg font-bold text-gray-900"><span class="num">1.4</span></div>
+                                        <div class="range-wrap"><span class="range-pill js-pill"></span><div class="rangebar"><div class="whisker js-whisker"></div><div class="center js-center"></div></div></div>
+                                    </div>
+                                    <div class="bg-white border border-[#e6e8ee] rounded-xl p-3 stat-card" data-prop="rushing_yards" data-value="199">
+                                        <p class="text-xs text-gray-500 font-medium">Rush Yards</p>
+                                        <div class="value text-lg font-bold text-gray-900"><span class="num">199</span></div>
+                                        <div class="range-wrap"><span class="range-pill js-pill"></span><div class="rangebar"><div class="whisker js-whisker"></div><div class="center js-center"></div></div></div>
+                                    </div>
+                                    <div class="bg-white border border-[#e6e8ee] rounded-xl p-3 stat-card" data-prop="rushing_attempts" data-value="32">
+                                        <p class="text-xs text-gray-500 font-medium">Rush Att</p>
+                                        <div class="value text-lg font-bold text-gray-900"><span class="num">32</span></div>
+                                        <div class="range-wrap"><span class="range-pill js-pill"></span><div class="rangebar"><div class="whisker js-whisker"></div><div class="center js-center"></div></div></div>
+                                    </div>
+                                    <div class="bg-white border border-[#e6e8ee] rounded-xl p-3 stat-card" data-prop="rushing_tds" data-value="2.9">
+                                        <p class="text-xs text-gray-500 font-medium">Rush TDs</p>
+                                        <div class="value text-lg font-bold text-gray-900"><span class="num">2.9</span></div>
+                                        <div class="range-wrap"><span class="range-pill js-pill"></span><div class="rangebar"><div class="whisker js-whisker"></div><div class="center js-center"></div></div></div>
+                                    </div>
+                                    <div class="bg-white border border-[#e6e8ee] rounded-xl p-3 stat-card" data-prop="turnovers" data-value="0.4">
+                                        <p class="text-xs text-gray-500 font-medium">Turnovers</p>
+                                        <div class="value text-lg font-bold text-gray-900"><span class="num">0.4</span></div>
+                                        <div class="range-wrap"><span class="range-pill js-pill"></span><div class="rangebar"><div class="whisker js-whisker"></div><div class="center js-center"></div></div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Half Analysis -->
+                        <div class="grid grid-cols-2 gap-4 half-analysis-grid">
+                            <div class="bg-gray-50 rounded-xl p-4 half-analysis-card">
+                                <h5 class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2 half-analysis-title">First Half</h5>
+                                <p class="text-2xl font-bold text-gray-900 half-analysis-score">27.6</p>
+                                <p class="text-xs text-gray-600 mt-1 half-analysis-note">
+                                    Indiana -3.2
+                                </p>
+                            </div>
+                            <div class="bg-gray-50 rounded-xl p-4 half-analysis-card">
+                                <h5 class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2 half-analysis-title">Second Half</h5>
+                                <p class="text-2xl font-bold text-gray-900 half-analysis-score">29.3</p>
+                                <p class="text-xs text-gray-600 mt-1 half-analysis-note">
+                                    Indiana -4.1
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Betting Tab -->
+                    <div id="game-0-betting" class="space-y-6 hidden">
+                        <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-sm">
+                            <div class="flex flex-col gap-4">
+                                <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
+                                    <div>
+                                        <span class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-gray-500">
+                                            Betting Overview
+                                        </span>
+                                        <div class="mt-1 flex flex-wrap items-center gap-2">
+                                            <span class="text-lg font-bold text-gray-900">BEST BET · Total · OVER 37.5 (-342) · LEAN</span>
+                                            <span class="flex items-center gap-1 text-yellow-400"><svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg></span>
+                                        </div>
+                                        <p class="text-sm text-gray-600 mt-1">
+                                            Top recommended play highlighted below.
+                                        </p>
+                                    </div>
+                                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 text-sm">
+                                        <div>
+                                            <span class="text-xs font-semibold text-gray-500 uppercase">Kickoff</span>
+                                            <p class="font-medium text-gray-900">1/19/27 • 7:30PM ET</p>
+                                        </div>
+                                        <div class="text-center">
+                                            <span class="text-xs font-semibold text-gray-500 uppercase">ATS Segment</span>
+                                            <div class="flex justify-center mt-1">
+                                                    <span class="matchup-pill" style="background-color: rgba(239, 68, 68, 0.18); color: #ef4444; border: 1px solid rgba(239, 68, 68, 0.45)">
+                                                        <div class="text-center">Away Dog</div>
+                                                        <div class="text-[10px] mt-0.5 opacity-90">50.0% hit</div>
+                                                    </span>
+                                                </div>
+                                        </div>
+                                        
+                                        <div class="text-center">
+                                            <span class="text-xs font-semibold text-gray-500 uppercase">ML Segment</span>
+                                            <div class="flex justify-center mt-1">
+                                                    <span class="matchup-pill" style="background-color: rgba(16, 185, 129, 0.18); color: #10b981; border: 1px solid rgba(16, 185, 129, 0.45)">
+                                                        <div class="text-center">Home Favorite</div>
+                                                        <div class="text-[10px] mt-0.5 opacity-90">79.0% hit</div>
+                                                    </span>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 xl:grid-cols-2 gap-5">
+                            <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-sm">
+                                <div class="flex items-center justify-between">
+                                    <h4 class="text-sm font-semibold text-gray-700">Model Edge</h4>
+                                    <span class="inline-flex items-center gap-2 text-xs font-semibold px-2 py-0.5 rounded-full bg-blue-50 text-blue-600">
+                                        Spread: HIGH · Total: LEAN
+                                    </span>
+                                </div>
+                                <div class="mt-4 space-y-4">
+                                    <div class="rounded-lg bg-slate-50 p-4">
+                                        <div class="flex items-center justify-between">
+                                            <div>
+                                                <p class="text-xs font-semibold uppercase tracking-wide text-slate-500">Spread</p>
+                                                <p class="mt-1 text-sm font-bold text-slate-900">Indiana +1.5 (-412)</p>
+                                            </div>
+                                            <span class="text-sm font-semibold text-rose-500">
+                                                -0.3
+                                            </span>
+                                        </div>
+                                        <dl class="mt-3 grid grid-cols-2 gap-3 text-xs text-slate-600">
+                                            <div>
+                                                <dt>Model Prob</dt>
+                                                <dd class="font-semibold text-slate-900">68.2%</dd>
+                                            </div>
+                                            <div>
+                                                <dt>Market Implied</dt>
+                                                <dd class="font-semibold text-slate-900">80.5%</dd>
+                                            </div>
+                                            
+                                            
+                                        </dl>
+                                        
+                                                <div class="mt-2 pt-2 border-t border-slate-200">
+                                                    <p class="text-[11px] font-semibold uppercase tracking-wide text-slate-500 mb-2">Conference Trend</p>
+                                                    <div class="conference-grid conference-grid--compact">
+                                                        
+                                                        <div class="conference-card conference-card--mini">
+                                                            <div class="conference-card__header">
+                                                                <span class="conference-card__name">ACC</span>
+                                                                <span class="conference-card__count">89 picks</span>
+                                                            </div>
+                                                            <div class="conference-card__metrics">
+                                                                <div>
+                                                                    <div class="conference-card__label">Pick</div>
+                                                                    <div class="conference-card__record">48-41-3</div>
+                                                                </div>
+                                                                <span class="conference-card__rate" style="color: #f59e0b">53.9%</span>
+                                                            </div>
+                                                        </div>
+                                                    
+                                                        <div class="conference-card conference-card--mini">
+                                                            <div class="conference-card__header">
+                                                                <span class="conference-card__name">Big Ten</span>
+                                                                <span class="conference-card__count">90 picks</span>
+                                                            </div>
+                                                            <div class="conference-card__metrics">
+                                                                <div>
+                                                                    <div class="conference-card__label">Opponent</div>
+                                                                    <div class="conference-card__record">50-40-2</div>
+                                                                </div>
+                                                                <span class="conference-card__rate" style="color: #10b981">55.6%</span>
+                                                            </div>
+                                                        </div>
+                                                    
+                                                    </div>
+                                                </div>
+                                            
+                                    </div>
+                                    <div class="rounded-lg bg-slate-50 p-4">
+                                        <div class="flex items-center justify-between">
+                                            <div>
+                                                <p class="text-xs font-semibold uppercase tracking-wide text-slate-500">Total</p>
+                                                <p class="mt-1 text-sm font-bold text-slate-900">OVER 37.5 (-342)</p>
+                                            </div>
+                                            <span class="text-sm font-semibold text-emerald-600">
+                                                +19.9
+                                            </span>
+                                        </div>
+                                        <dl class="mt-3 grid grid-cols-2 gap-3 text-xs text-slate-600">
+                                            <div>
+                                                <dt>Model Prob</dt>
+                                                <dd class="font-semibold text-slate-900">72.7%</dd>
+                                            </div>
+                                            <div>
+                                                <dt>Market Implied</dt>
+                                                <dd class="font-semibold text-slate-900">77.4%</dd>
+                                            </div>
+                                            
+                                            
+                                        </dl>
+                                        
+                                    </div>
+                                    <div class="rounded-lg bg-slate-50 p-4">
+                                        <p class="text-xs font-semibold uppercase tracking-wide text-slate-500">Residual Adjustments</p>
+                                        <dl class="mt-3 space-y-2 text-xs text-slate-600">
+                                            <div class="flex justify-between">
+                                                <dt>Margin Delta</dt>
+                                                <dd class="font-semibold text-slate-900">+0.8</dd>
+                                            </div>
+                                            <div class="flex justify-between">
+                                                <dt>Total Delta</dt>
+                                                <dd class="font-semibold text-slate-900">+0.6</dd>
+                                            </div>
+                                            <div class="flex justify-between">
+                                                <dt>Home Residual</dt>
+                                                <dd class="font-semibold text-slate-900">+6.6</dd>
+                                            </div>
+                                            <div class="flex justify-between">
+                                                <dt>Away Residual</dt>
+                                                <dd class="font-semibold text-slate-900">+2.1</dd>
+                                            </div>
+                                            <div class="flex justify-between">
+                                                <dt>Raw Total</dt>
+                                                <dd class="font-semibold text-slate-900">58.0</dd>
+                                            </div>
+                                            <div class="flex justify-between">
+                                                <dt>Adjusted Total</dt>
+                                                <dd class="font-semibold text-slate-900">57.4</dd>
+                                            </div>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-sm">
+                                <h4 class="text-sm font-semibold text-gray-700 mb-4">Team Form &amp; Stats</h4>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+                                    
+                                    <div class="rounded-lg border border-slate-200 p-4">
+                                        <div class="flex items-center justify-between">
+                                            <div>
+                                                <p class="text-sm font-bold text-slate-900">Miami</p>
+                                                <p class="text-xs text-slate-500">Record 10-2 · ATS 7-5 · O/U 4-8</p>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="mt-3 grid grid-cols-2 gap-3 text-xs text-slate-600">
+                                            <div>
+                                                <dt>Model Score</dt>
+                                                <dd class="font-semibold text-slate-900">24.6</dd>
+                                            </div>
+                                            <div>
+                                                <dt>Vegas Spread</dt>
+                                                <dd class="font-semibold text-slate-900">+8.5</dd>
+                                            </div>
+                                            <div>
+                                                <dt>Passing Yds</dt>
+                                                <dd class="font-semibold text-slate-900">187</dd>
+                                            </div>
+                                            <div>
+                                                <dt>Rushing Yds</dt>
+                                                <dd class="font-semibold text-slate-900">187</dd>
+                                            </div>
+                                            <div>
+                                                <dt>Pass TDs</dt>
+                                                <dd class="font-semibold text-slate-900">0.9</dd>
+                                            </div>
+                                            <div>
+                                                <dt>Rush TDs</dt>
+                                                <dd class="font-semibold text-slate-900">2.4</dd>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="rounded-lg border border-slate-200 p-4">
+                                        <div class="flex items-center justify-between">
+                                            <div>
+                                                <p class="text-sm font-bold text-slate-900">Indiana</p>
+                                                <p class="text-xs text-slate-500">Record 13-0 · ATS 8-5 · O/U 8-5</p>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="mt-3 grid grid-cols-2 gap-3 text-xs text-slate-600">
+                                            <div>
+                                                <dt>Model Score</dt>
+                                                <dd class="font-semibold text-slate-900">32.8</dd>
+                                            </div>
+                                            <div>
+                                                <dt>Vegas Spread</dt>
+                                                <dd class="font-semibold text-slate-900">-8.5</dd>
+                                            </div>
+                                            <div>
+                                                <dt>Passing Yds</dt>
+                                                <dd class="font-semibold text-slate-900">235</dd>
+                                            </div>
+                                            <div>
+                                                <dt>Rushing Yds</dt>
+                                                <dd class="font-semibold text-slate-900">199</dd>
+                                            </div>
+                                            <div>
+                                                <dt>Pass TDs</dt>
+                                                <dd class="font-semibold text-slate-900">1.4</dd>
+                                            </div>
+                                            <div>
+                                                <dt>Rush TDs</dt>
+                                                <dd class="font-semibold text-slate-900">2.9</dd>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="mt-4 pt-3 border-t border-slate-200">
+                                    <h5 class="text-xs font-semibold text-gray-500 uppercase mb-2">Recent Game Log</h5>
+                                    <div class="space-y-4">
+                                        
+                <div class="rounded-lg bg-slate-50 p-3">
+                    <div class="flex items-center justify-between mb-2">
+                        <p class="text-xs font-bold text-slate-900">Miami</p>
+                        <span class="text-[10px] text-slate-500 uppercase">Last 5</span>
+                    </div>
+                    <div class="bg-white rounded border border-gray-200 overflow-hidden">
+                        <table class="w-full text-xs">
+                            <thead>
+                                <tr class="border-b border-gray-300">
+                                    <th class="px-2 py-1 text-left text-[10px] font-semibold text-gray-500 uppercase">Date</th>
+                                    <th class="px-2 py-1 text-left text-[10px] font-semibold text-gray-500 uppercase">Opp</th>
+                                    <th class="px-2 py-1 text-left text-[10px] font-semibold text-gray-500 uppercase">Score</th>
+                                    <th class="px-2 py-1 text-center text-[10px] font-semibold text-gray-500 uppercase">ATS</th>
+                                    <th class="px-2 py-1 text-center text-[10px] font-semibold text-gray-500 uppercase">O/U</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                    <tr class="border-b border-gray-200 hover:bg-gray-50 transition-colors">
+                        <td class="px-2 py-1.5 text-[11px] text-gray-500">Jan 1, 2026</td>
+                        <td class="px-2 py-1.5 text-[11px] font-semibold text-gray-900">@ Texas A&M</td>
+                        <td class="px-2 py-1.5 text-[11px] font-bold text-green-600">W 10-3</td>
+                        <td class="px-2 py-1.5 text-center text-sm text-green-600">✓</td>
+                        <td class="px-2 py-1.5 text-center text-[11px] font-semibold text-gray-900">u</td>
+                    </tr>
+                
+                    <tr class="border-b border-gray-200 hover:bg-gray-50 transition-colors">
+                        <td class="px-2 py-1.5 text-[11px] text-gray-500">Jan 1, 2026</td>
+                        <td class="px-2 py-1.5 text-[11px] font-semibold text-gray-900">@ Ohio State</td>
+                        <td class="px-2 py-1.5 text-[11px] font-bold text-green-600">W 24-14</td>
+                        <td class="px-2 py-1.5 text-center text-sm text-green-600">✓</td>
+                        <td class="px-2 py-1.5 text-center text-[11px] font-semibold text-gray-900">u</td>
+                    </tr>
+                
+                    <tr class="border-b border-gray-200 hover:bg-gray-50 transition-colors">
+                        <td class="px-2 py-1.5 text-[11px] text-gray-500">Nov 29, 2025</td>
+                        <td class="px-2 py-1.5 text-[11px] font-semibold text-gray-900">@ Pittsburgh</td>
+                        <td class="px-2 py-1.5 text-[11px] font-bold text-green-600">W 38-7</td>
+                        <td class="px-2 py-1.5 text-center text-sm text-green-600">✓</td>
+                        <td class="px-2 py-1.5 text-center text-[11px] font-semibold text-gray-900">u</td>
+                    </tr>
+                
+                    <tr class="border-b border-gray-200 hover:bg-gray-50 transition-colors">
+                        <td class="px-2 py-1.5 text-[11px] text-gray-500">Nov 22, 2025</td>
+                        <td class="px-2 py-1.5 text-[11px] font-semibold text-gray-900">@ Virginia Tech</td>
+                        <td class="px-2 py-1.5 text-[11px] font-bold text-green-600">W 34-17</td>
+                        <td class="px-2 py-1.5 text-center text-sm text-red-600">✗</td>
+                        <td class="px-2 py-1.5 text-center text-[11px] font-semibold text-gray-900">o</td>
+                    </tr>
+                
+                    <tr class=" hover:bg-gray-50 transition-colors">
+                        <td class="px-2 py-1.5 text-[11px] text-gray-500">Nov 15, 2025</td>
+                        <td class="px-2 py-1.5 text-[11px] font-semibold text-gray-900">vs NC State</td>
+                        <td class="px-2 py-1.5 text-[11px] font-bold text-green-600">W 41-7</td>
+                        <td class="px-2 py-1.5 text-center text-sm text-green-600">✓</td>
+                        <td class="px-2 py-1.5 text-center text-[11px] font-semibold text-gray-900">u</td>
+                    </tr>
+                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            
+                <div class="rounded-lg bg-slate-50 p-3">
+                    <div class="flex items-center justify-between mb-2">
+                        <p class="text-xs font-bold text-slate-900">Indiana</p>
+                        <span class="text-[10px] text-slate-500 uppercase">Last 5</span>
+                    </div>
+                    <div class="bg-white rounded border border-gray-200 overflow-hidden">
+                        <table class="w-full text-xs">
+                            <thead>
+                                <tr class="border-b border-gray-300">
+                                    <th class="px-2 py-1 text-left text-[10px] font-semibold text-gray-500 uppercase">Date</th>
+                                    <th class="px-2 py-1 text-left text-[10px] font-semibold text-gray-500 uppercase">Opp</th>
+                                    <th class="px-2 py-1 text-left text-[10px] font-semibold text-gray-500 uppercase">Score</th>
+                                    <th class="px-2 py-1 text-center text-[10px] font-semibold text-gray-500 uppercase">ATS</th>
+                                    <th class="px-2 py-1 text-center text-[10px] font-semibold text-gray-500 uppercase">O/U</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                    <tr class="border-b border-gray-200 hover:bg-gray-50 transition-colors">
+                        <td class="px-2 py-1.5 text-[11px] text-gray-500">Jan 1, 2026</td>
+                        <td class="px-2 py-1.5 text-[11px] font-semibold text-gray-900">vs Alabama</td>
+                        <td class="px-2 py-1.5 text-[11px] font-bold text-green-600">W 38-3</td>
+                        <td class="px-2 py-1.5 text-center text-sm text-green-600">✓</td>
+                        <td class="px-2 py-1.5 text-center text-[11px] font-semibold text-gray-900">u</td>
+                    </tr>
+                
+                    <tr class="border-b border-gray-200 hover:bg-gray-50 transition-colors">
+                        <td class="px-2 py-1.5 text-[11px] text-gray-500">Dec 6, 2025</td>
+                        <td class="px-2 py-1.5 text-[11px] font-semibold text-gray-900">@ Ohio State</td>
+                        <td class="px-2 py-1.5 text-[11px] font-bold text-green-600">W 13-10</td>
+                        <td class="px-2 py-1.5 text-center text-sm text-green-600">✓</td>
+                        <td class="px-2 py-1.5 text-center text-[11px] font-semibold text-gray-900">u</td>
+                    </tr>
+                
+                    <tr class="border-b border-gray-200 hover:bg-gray-50 transition-colors">
+                        <td class="px-2 py-1.5 text-[11px] text-gray-500">Nov 28, 2025</td>
+                        <td class="px-2 py-1.5 text-[11px] font-semibold text-gray-900">@ Purdue</td>
+                        <td class="px-2 py-1.5 text-[11px] font-bold text-green-600">W 56-3</td>
+                        <td class="px-2 py-1.5 text-center text-sm text-green-600">✓</td>
+                        <td class="px-2 py-1.5 text-center text-[11px] font-semibold text-gray-900">o</td>
+                    </tr>
+                
+                    <tr class="border-b border-gray-200 hover:bg-gray-50 transition-colors">
+                        <td class="px-2 py-1.5 text-[11px] text-gray-500">Nov 15, 2025</td>
+                        <td class="px-2 py-1.5 text-[11px] font-semibold text-gray-900">vs Wisconsin</td>
+                        <td class="px-2 py-1.5 text-[11px] font-bold text-green-600">W 31-7</td>
+                        <td class="px-2 py-1.5 text-center text-sm text-red-600">✗</td>
+                        <td class="px-2 py-1.5 text-center text-[11px] font-semibold text-gray-900">u</td>
+                    </tr>
+                
+                    <tr class=" hover:bg-gray-50 transition-colors">
+                        <td class="px-2 py-1.5 text-[11px] text-gray-500">Nov 8, 2025</td>
+                        <td class="px-2 py-1.5 text-[11px] font-semibold text-gray-900">@ Penn State</td>
+                        <td class="px-2 py-1.5 text-[11px] font-bold text-green-600">W 27-24</td>
+                        <td class="px-2 py-1.5 text-center text-sm text-red-600">✗</td>
+                        <td class="px-2 py-1.5 text-center text-[11px] font-semibold text-gray-900">o</td>
+                    </tr>
+                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Analytics Tab -->
+                    <div id="game-0-analytics" class="space-y-6 hidden">
+                        <!-- Offensive Stats Grid -->
+                        <div class="space-y-4">
+                            <h4 class="text-sm font-semibold text-gray-700">Offensive Projections</h4>
+                            
+                            <!-- Away Team Stats -->
+                            <div class="analytics-panel" style="--accent:#004325;">
+                                <div class="analytics-header"><span>Miami</span></div>
+                                <div class="analytics-grid">
+                                    <div class="bg-white/70 rounded-lg p-3 stat-card" data-prop="passing_yards" data-value="187">
+                                        <p class="text-xs text-gray-500 font-medium">Pass Yards</p>
+                                        <div class="value text-lg font-bold text-gray-900"><span class="num">187</span></div>
+                                        <div class="range-wrap"><span class="range-pill js-pill"></span><div class="rangebar"><div class="whisker js-whisker"></div><div class="center js-center"></div></div></div>
+                                    </div>
+                                    <div class="bg-white/70 rounded-lg p-3 stat-card" data-prop="pass_attempts" data-value="23">
+                                        <p class="text-xs text-gray-500 font-medium">Pass Attempts</p>
+                                        <div class="value text-lg font-bold text-gray-900"><span class="num">23</span></div>
+                                        <div class="range-wrap"><span class="range-pill js-pill"></span><div class="rangebar"><div class="whisker js-whisker"></div><div class="center js-center"></div></div></div>
+                                    </div>
+                                    <div class="bg-white/70 rounded-lg p-3 stat-card" data-prop="pass_completions" data-value="14">
+                                        <p class="text-xs text-gray-500 font-medium">Completions</p>
+                                        <div class="value text-lg font-bold text-gray-900"><span class="num">14</span></div>
+                                        <div class="range-wrap"><span class="range-pill js-pill"></span><div class="rangebar"><div class="whisker js-whisker"></div><div class="center js-center"></div></div></div>
+                                    </div>
+                                    <div class="bg-white/70 rounded-lg p-3 stat-card" data-prop="passing_tds" data-value="0.9">
+                                        <p class="text-xs text-gray-500 font-medium">Pass TDs</p>
+                                        <div class="value text-lg font-bold text-gray-900"><span class="num">0.9</span></div>
+                                        <div class="range-wrap"><span class="range-pill js-pill"></span><div class="rangebar"><div class="whisker js-whisker"></div><div class="center js-center"></div></div></div>
+                                    </div>
+                                    <div class="bg-white/70 rounded-lg p-3 stat-card" data-prop="rushing_yards" data-value="187">
+                                        <p class="text-xs text-gray-500 font-medium">Rush Yards</p>
+                                        <div class="value text-lg font-bold text-gray-900"><span class="num">187</span></div>
+                                        <div class="range-wrap"><span class="range-pill js-pill"></span><div class="rangebar"><div class="whisker js-whisker"></div><div class="center js-center"></div></div></div>
+                                    </div>
+                                    <div class="bg-white/70 rounded-lg p-3 stat-card" data-prop="rushing_attempts" data-value="36">
+                                        <p class="text-xs text-gray-500 font-medium">Rush Att</p>
+                                        <div class="value text-lg font-bold text-gray-900"><span class="num">36</span></div>
+                                        <div class="range-wrap"><span class="range-pill js-pill"></span><div class="rangebar"><div class="whisker js-whisker"></div><div class="center js-center"></div></div></div>
+                                    </div>
+                                    <div class="bg-white/70 rounded-lg p-3 stat-card" data-prop="rushing_tds" data-value="2.4">
+                                        <p class="text-xs text-gray-500 font-medium">Rush TDs</p>
+                                        <div class="value text-lg font-bold text-gray-900"><span class="num">2.4</span></div>
+                                        <div class="range-wrap"><span class="range-pill js-pill"></span><div class="rangebar"><div class="whisker js-whisker"></div><div class="center js-center"></div></div></div>
+                                    </div>
+                                    <div class="bg-white/70 rounded-lg p-3 stat-card" data-prop="turnovers" data-value="0.6">
+                                        <p class="text-xs text-gray-500 font-medium">Turnovers</p>
+                                        <div class="value text-lg font-bold text-gray-900"><span class="num">0.6</span></div>
+                                        <div class="range-wrap"><span class="range-pill js-pill"></span><div class="rangebar"><div class="whisker js-whisker"></div><div class="center js-center"></div></div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Home Team Stats -->
+                            <div class="analytics-panel" style="--accent:#7D110C;">
+                                <div class="analytics-header"><span>Indiana</span></div>
+                                <div class="analytics-grid">
+                                    <div class="bg-white/70 rounded-lg p-3 stat-card" data-prop="passing_yards" data-value="235">
+                                        <p class="text-xs text-gray-500 font-medium">Pass Yards</p>
+                                        <div class="value text-lg font-bold text-gray-900"><span class="num">235</span></div>
+                                        <div class="range-wrap"><span class="range-pill js-pill"></span><div class="rangebar"><div class="whisker js-whisker"></div><div class="center js-center"></div></div></div>
+                                    </div>
+                                    <div class="bg-white/70 rounded-lg p-3 stat-card" data-prop="pass_attempts" data-value="25">
+                                        <p class="text-xs text-gray-500 font-medium">Pass Attempts</p>
+                                        <div class="value text-lg font-bold text-gray-900"><span class="num">25</span></div>
+                                        <div class="range-wrap"><span class="range-pill js-pill"></span><div class="rangebar"><div class="whisker js-whisker"></div><div class="center js-center"></div></div></div>
+                                    </div>
+                                    <div class="bg-white/70 rounded-lg p-3 stat-card" data-prop="pass_completions" data-value="17">
+                                        <p class="text-xs text-gray-500 font-medium">Completions</p>
+                                        <div class="value text-lg font-bold text-gray-900"><span class="num">17</span></div>
+                                        <div class="range-wrap"><span class="range-pill js-pill"></span><div class="rangebar"><div class="whisker js-whisker"></div><div class="center js-center"></div></div></div>
+                                    </div>
+                                    <div class="bg-white/70 rounded-lg p-3 stat-card" data-prop="passing_tds" data-value="1.4">
+                                        <p class="text-xs text-gray-500 font-medium">Pass TDs</p>
+                                        <div class="value text-lg font-bold text-gray-900"><span class="num">1.4</span></div>
+                                        <div class="range-wrap"><span class="range-pill js-pill"></span><div class="rangebar"><div class="whisker js-whisker"></div><div class="center js-center"></div></div></div>
+                                    </div>
+                                    <div class="bg-white/70 rounded-lg p-3 stat-card" data-prop="rushing_yards" data-value="199">
+                                        <p class="text-xs text-gray-500 font-medium">Rush Yards</p>
+                                        <div class="value text-lg font-bold text-gray-900"><span class="num">199</span></div>
+                                        <div class="range-wrap"><span class="range-pill js-pill"></span><div class="rangebar"><div class="whisker js-whisker"></div><div class="center js-center"></div></div></div>
+                                    </div>
+                                    <div class="bg-white/70 rounded-lg p-3 stat-card" data-prop="rushing_attempts" data-value="32">
+                                        <p class="text-xs text-gray-500 font-medium">Rush Att</p>
+                                        <div class="value text-lg font-bold text-gray-900"><span class="num">32</span></div>
+                                        <div class="range-wrap"><span class="range-pill js-pill"></span><div class="rangebar"><div class="whisker js-whisker"></div><div class="center js-center"></div></div></div>
+                                    </div>
+                                    <div class="bg-white/70 rounded-lg p-3 stat-card" data-prop="rushing_tds" data-value="2.9">
+                                        <p class="text-xs text-gray-500 font-medium">Rush TDs</p>
+                                        <div class="value text-lg font-bold text-gray-900"><span class="num">2.9</span></div>
+                                        <div class="range-wrap"><span class="range-pill js-pill"></span><div class="rangebar"><div class="whisker js-whisker"></div><div class="center js-center"></div></div></div>
+                                    </div>
+                                    <div class="bg-white/70 rounded-lg p-3 stat-card" data-prop="turnovers" data-value="0.4">
+                                        <p class="text-xs text-gray-500 font-medium">Turnovers</p>
+                                        <div class="value text-lg font-bold text-gray-900"><span class="num">0.4</span></div>
+                                        <div class="range-wrap"><span class="range-pill js-pill"></span><div class="rangebar"><div class="whisker js-whisker"></div><div class="center js-center"></div></div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Half Analysis -->
+                        <div class="grid grid-cols-2 gap-4 half-analysis-grid">
+                            <div class="bg-gray-50 rounded-xl p-4 half-analysis-card">
+                                <h5 class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2 half-analysis-title">First Half</h5>
+                                <p class="text-2xl font-bold text-gray-900 half-analysis-score">27.6</p>
+                                <p class="text-xs text-gray-600 mt-1 half-analysis-note">
+                                    Indiana -3.2
+                                </p>
+                            </div>
+                            <div class="bg-gray-50 rounded-xl p-4 half-analysis-card">
+                                <h5 class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2 half-analysis-title">Second Half</h5>
+                                <p class="text-2xl font-bold text-gray-900 half-analysis-score">29.3</p>
+                                <p class="text-xs text-gray-600 mt-1 half-analysis-note">
+                                    Indiana -4.1
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Betting Tab -->
+                    <div id="game-0-betting" class="space-y-6 hidden">
+                        <!-- Confidence Meters -->
+                        <div class="bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-4">
+                            <div class="space-y-4">
+                                <div>
+                                    <div class="flex justify-between items-center mb-2">
+                                        <span class="text-sm font-medium text-gray-700">Spread Confidence</span>
+                                        <span class="text-sm font-bold" style="color: #0f766e">HIGH</span>
+                                    </div>
+                                    <div class="h-3 bg-white rounded-full overflow-hidden">
+                                        <div class="h-full rounded-full" style="width: 68%; background: #0f766e"></div>
+                                    </div>
+                                    <div class="mt-2 text-[11px] text-gray-600" title="Model probability of the listed spread pick covering">
+                                        Model Probability: <span class="font-semibold">68%</span>
+                                    </div>
+                                </div>
+                                
+                                <div>
+                                    <div class="flex justify-between items-center mb-2">
+                                        <span class="text-sm font-medium text-gray-700">Total Confidence</span>
+                                        <span class="text-sm font-bold" style="color: #f59e0b">LEAN</span>
+                                    </div>
+                                    <div class="h-3 bg-white rounded-full overflow-hidden">
+                                        <div class="h-full rounded-full" style="width: 73%; background: #f59e0b"></div>
+                                    </div>
+                                    <div class="mt-2 text-[11px] text-gray-600" title="Model probability of the listed total pick hitting">
+                                        Model Probability: <span class="font-semibold">73%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Best Bets Summary -->
+                        
+                        <div class="bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-4 border border-gray-200">
+                            <h4 class="text-sm font-semibold text-gray-700 mb-3 flex items-center">
+                                <svg class="w-4 h-4 mr-1 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                Recommended Bets
+                            </h4>
+                            
+                                <div class="bg-white/70 rounded-lg p-3 mb-2">
+                                    <div class="flex justify-between items-center">
+                                        <div>
+                                            <span class="text-xs font-medium text-gray-500 uppercase">TOTAL</span>
+                                            <p class="text-sm font-bold text-gray-900">OVER 37.5 (-342)</p>
+                                            <div class="mt-1 flex items-center gap-1">
+                                                
+                                                <span class="px-2 py-0.5 rounded-full text-[10px] font-medium bg-green-50 text-green-700" title="Model probability">73%</span>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="text-right">
+                                            <p class="text-xs text-gray-500">Edge</p>
+                                            <p class="text-sm font-bold text-green-600">
+                                                +19.9 pts
+                                            </p>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                        </div>
+                        
+                        
+                        <!-- Over/Under Visual -->
+                        <div class="bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-4">
+                            <h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Total Points Analysis</h4>
+                            <div class="space-y-3">
+                                <div class="flex justify-between text-sm">
+                                    <span>Vegas Line</span>
+                                    <span class="font-bold">47.5</span>
+                                </div>
+                                <div class="flex justify-between text-sm">
+                                        <span>Model Play Line</span>
+                                        <span class="font-bold text-blue-600">37.5</span>
+                                    </div>
+                                <div class="flex justify-between text-sm">
+                                    <span>Model Projection</span>
+                                    <span class="font-bold gradient-text">57.4</span>
+                                </div>
+                                <div class="flex justify-between text-sm">
+                                    <span>Edge</span>
+                                    <span class="font-bold text-green-600">OVER by 19.9</span>
+                                </div>
+                                
+                                <!-- Probability Bar -->
+                                <div class="relative pt-4">
+                                    <div class="text-center text-xs text-gray-600 mb-2 font-semibold">
+                                        OVER 73% Confidence
+                                    </div>
+                                    <div class="relative h-8 bg-gray-200 rounded-full overflow-hidden">
+                                        <!-- OVER probability shown as green from left -->
+                                        <div class="absolute inset-y-0 left-0 bg-gradient-to-r from-green-500 to-green-400 flex items-center justify-center"
+                                             style="width: 73%">
+                                            <span class="text-xs font-bold text-white">OVER 73%</span>
+                                        </div>
+                                        <!-- Add text outside if bar is too small -->
+                                        
+                                        
+                                            <div class="absolute inset-y-0 right-0 flex items-center pr-2">
+                                                <span class="text-xs font-bold text-gray-700">27%</span>
+                                            </div>
+                                        
+                                    </div>
+                                    <div class="flex justify-between text-xs text-gray-400 mt-1">
+                                        <span>UNDER 100%</span>
+                                        <span>OVER 100%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+	                    </div>
+
+	                    <!-- Line Move Tab -->
+	                    <div id="game-0-movement" class="space-y-6 hidden">
+	                        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
+            
+        <div class="bg-gradient-to-br from-white to-slate-50 border border-slate-200 rounded-xl p-4 md:p-5 shadow-sm">
+            <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-2 md:gap-3">
+                <div>
+                    <h4 class="text-[11px] md:text-xs font-semibold text-slate-500 uppercase tracking-wide">Spread</h4>
+                    
+        <div class="mt-0.5 flex items-center gap-2">
+            <img src="http://a.espncdn.com/i/teamlogos/ncaa/500/2390.png" alt="Miami" class="w-4 h-4 md:w-5 md:h-5 shrink-0 object-contain" onerror="this.style.display='none'">
+            <span class="text-[9px] md:text-[10px] font-semibold text-slate-400 uppercase tracking-wide">@</span>
+            <img src="http://a.espncdn.com/i/teamlogos/ncaa/500/84.png" alt="Indiana" class="w-4 h-4 md:w-5 md:h-5 shrink-0 object-contain" onerror="this.style.display='none'">
+        </div>
+    
+                </div>
+                
+                    <span class="text-[10px] md:text-[11px] text-slate-400 md:whitespace-nowrap">
+                        <span class="md:hidden">Jan 17 5:56a → Jan 17 5:56a</span>
+                        <span class="hidden md:inline">Jan 17, 5:56 AM → Jan 17, 5:56 AM</span>
+                    </span>
+                
+            </div>
+            <div class="mt-2.5 md:mt-3 grid grid-cols-[1fr,auto,1fr] items-end gap-2 md:gap-3">
+                <div class="rounded-lg bg-white/70 border border-slate-100 px-2.5 md:px-3 py-2 min-w-0">
+                    <div class="text-[10px] uppercase text-slate-400 font-semibold">Open</div>
+                    
+            <div class="mt-0.5 flex items-center justify-between gap-2 min-w-0">
+                <div class="flex items-center gap-2 min-w-0">
+                    <img src="http://a.espncdn.com/i/teamlogos/ncaa/500/84.png" alt="Indiana" class="w-6 h-6 md:w-7 md:h-7 shrink-0 object-contain" onerror="this.style.display='none'">
+                    <div class="text-sm md:text-base font-bold text-slate-900 leading-tight truncate" title="Indiana">
+                        <span class="md:hidden">IND</span>
+                        <span class="hidden md:inline">Indiana</span>
+                    </div>
+                </div>
+                <div class="text-sm md:text-base font-bold text-slate-900 leading-tight shrink-0">-8.5</div>
+            </div>
+        
+                </div>
+                <div class="flex items-center justify-center pb-1">
+                    <span class="text-slate-300 font-extrabold text-lg">➜</span>
+                </div>
+                <div class="rounded-lg bg-white/70 border border-slate-100 px-2.5 md:px-3 py-2 text-right min-w-0">
+                    <div class="text-[10px] uppercase text-slate-400 font-semibold">Now</div>
+                    
+            <div class="mt-0.5 flex items-center justify-end gap-2 min-w-0">
+                <div class="text-sm md:text-base font-bold text-slate-900 leading-tight truncate text-right min-w-0 flex-1" title="Indiana">
+                    <span class="md:hidden">IND</span>
+                    <span class="hidden md:inline">Indiana</span>
+                </div>
+                <div class="text-sm md:text-base font-bold text-slate-900 leading-tight shrink-0">-8.5</div>
+                <img src="http://a.espncdn.com/i/teamlogos/ncaa/500/84.png" alt="Indiana" class="w-6 h-6 md:w-7 md:h-7 shrink-0 object-contain" onerror="this.style.display='none'">
+            </div>
+        
+                </div>
+            </div>
+            <div class="mt-2.5 md:mt-3 flex items-center justify-between">
+                <span class="text-xs text-slate-500">Move</span>
+                <div class="flex items-center gap-2">
+                    <span class="inline-flex items-center px-2 py-1 rounded-full text-[11px] font-semibold bg-slate-100 text-slate-600">0</span>
+                    
+                </div>
+            </div>
+        </div>
+    
+            
+        <div class="bg-gradient-to-br from-white to-slate-50 border border-slate-200 rounded-xl p-4 md:p-5 shadow-sm">
+            <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-2 md:gap-3">
+                <div>
+                    <h4 class="text-[11px] md:text-xs font-semibold text-slate-500 uppercase tracking-wide">Total</h4>
+                    
+        <div class="mt-0.5 flex items-center gap-2">
+            <img src="http://a.espncdn.com/i/teamlogos/ncaa/500/2390.png" alt="Miami" class="w-4 h-4 md:w-5 md:h-5 shrink-0 object-contain" onerror="this.style.display='none'">
+            <span class="text-[9px] md:text-[10px] font-semibold text-slate-400 uppercase tracking-wide">@</span>
+            <img src="http://a.espncdn.com/i/teamlogos/ncaa/500/84.png" alt="Indiana" class="w-4 h-4 md:w-5 md:h-5 shrink-0 object-contain" onerror="this.style.display='none'">
+        </div>
+    
+                </div>
+                
+                    <span class="text-[10px] md:text-[11px] text-slate-400 md:whitespace-nowrap">
+                        <span class="md:hidden">Jan 17 5:56a → Jan 17 5:56a</span>
+                        <span class="hidden md:inline">Jan 17, 5:56 AM → Jan 17, 5:56 AM</span>
+                    </span>
+                
+            </div>
+            <div class="mt-2.5 md:mt-3 grid grid-cols-[1fr,auto,1fr] items-end gap-2 md:gap-3">
+                <div class="rounded-lg bg-white/70 border border-slate-100 px-2.5 md:px-3 py-2 min-w-0">
+                    <div class="text-[10px] uppercase text-slate-400 font-semibold">Open</div>
+                    
+        <div class="mt-0.5 ">
+            <div class="text-sm md:text-base font-bold text-slate-900 leading-tight">47.5</div>
+        </div>
+    
+                </div>
+                <div class="flex items-center justify-center pb-1">
+                    <span class="text-slate-300 font-extrabold text-lg">➜</span>
+                </div>
+                <div class="rounded-lg bg-white/70 border border-slate-100 px-2.5 md:px-3 py-2 text-right min-w-0">
+                    <div class="text-[10px] uppercase text-slate-400 font-semibold">Now</div>
+                    
+        <div class="mt-0.5 text-right">
+            <div class="text-sm md:text-base font-bold text-slate-900 leading-tight">47.5</div>
+        </div>
+    
+                </div>
+            </div>
+            <div class="mt-2.5 md:mt-3 flex items-center justify-between">
+                <span class="text-xs text-slate-500">Move</span>
+                <div class="flex items-center gap-2">
+                    <span class="inline-flex items-center px-2 py-1 rounded-full text-[11px] font-semibold bg-slate-100 text-slate-600">0</span>
+                    
+                </div>
+            </div>
+        </div>
+    
+        </div>
+    
+	                    </div>
+	                </div>
+	            </div>
+	        
         </div>
         
         <!-- Disclaimer -->
